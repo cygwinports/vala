@@ -1,0 +1,13 @@
+inherit gnome2
+
+DESCRIPTION="Compiler for the GObject type system"
+HOMEPAGE="http://live.gnome.org/Vala"
+
+PATCH_URI="
+	0.3.4-vpath.patch
+	0.3.5-tests.patch
+"
+
+DIFF_EXCLUDES="vala*.c"
+
+CYGCONF_ARGS="--enable-vapigen"
