@@ -1,0 +1,53 @@
+inherit gnome2
+
+DESCRIPTION="Compiler for the GObject type system"
+HOMEPAGE="http://live.gnome.org/Vala"
+
+PATCH_URI="
+	0.3.5-tests.patch
+"
+
+vapidir=usr/share/vala/vapi
+
+PKG_NAMES="vala libvala0 libvala-devel"
+libvala0_CONTENTS="usr/bin/cygvala-0.dll"
+libvala_devel_CONTENTS="usr/include/ usr/lib/libvala* usr/lib/pkgconfig/
+                        ${vapidir}/vala-1.0.vapi"
+vala_CONTENTS+=" --exclude=vala-1.0.vapi"
+
+PKG_NAMES+=" vala-gtk2.0"
+vala_gtk2_0_CONTENTS="${vapidir}/gdk-2.0.* ${vapidir}/gdk-x11-2.0.* ${vapidir}/gtk+-2.0.*"
+vala_CONTENTS+=" --exclude=gdk*2.0.* --exclude=gtk+-2.0.*"
+
+PKG_NAMES+=" vala-gstreamer0.10"
+vala_gstreamer0_10_CONTENTS="${vapidir}/gstreamer*-0.10.*"
+vala_CONTENTS+=" --exclude=gstreamer*-0.10.*"
+
+for vapi in atk bzlib cairo curses dbus-glib-1 enchant gconf-2.0 \
+            gdk-pixbuf-2.0 gnet-2.0 gnome-desktop-2.0 gnome-keyring-1 \
+			gnome-vfs-2.0 goocanvas gsl gtksourceview-2.0 json-glib-1.0 \
+			libbonoboui-2.0 libglade-2.0 libgnome-2.0 libgnome-menu \
+			libgnomeui-2.0 libgsf-1 libnotify libpanelapplet-2.0 libsexy \
+			libsoup-2.2 libsoup-2.4 libusb libwnck-1.0 libxml-2.0 \
+			loudmouth-1.0 pango poppler-glib sdl sqlite3 taglib_c tiff \
+			unique-1.0 vte webkit-1.0 zlib
+do
+	vapi_pkg=$(echo ${vapi} | sed -e 's/\-\([0-9]\)/\1/')
+	PKG_NAMES+=" vala-${vapi_pkg}"
+	declare vala_${vapi_pkg//[-\.]/_}_CONTENTS="${vapidir}/${vapi}*.*"
+	vala_CONTENTS+=" --exclude=${vapi}*.*"
+done
+
+for vapi in gtkmozembed hal hildon-1 hildon-fm-2 libepc-1.0 libftdi \
+            liboobs-1 tracker-indexer-module-1.0
+do
+	PKG_IGNORE+=" ${vapidir}/${vapi}.*"
+	vala_CONTENTS+=" --exclude=${vapi}.*"
+done
+
+vala_CONTENTS+=" usr/bin/va* usr/lib/vala/ usr/share/"
+
+
+DIFF_EXCLUDES="vala*.c"
+
+CYGCONF_ARGS="--enable-vapigen"

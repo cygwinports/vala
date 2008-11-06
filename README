@@ -8,22 +8,22 @@ applications and libraries written in C.
 Runtime requirements:
   cygwin-1.5.25-15
   gcc-core
-  glib2-2.16.5-1
+  glib2-2.16.6-1
   glib2-devel
   pkg-config
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
+  autoconf2.5-2.63-1
   automake1.10-1.10.1-1
-  binutils-20080523-2
+  binutils-20080624-2
   bison-2.3-1
-  cygport-0.3.12-1
+  cygport-0.4.2-1
   flex-2.5.35-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   gnome-common-2.20.0-2
-  libtool-2.2.2-2
+  libtool-2.2.6a-1
   make-3.81-1
   pkg-config-0.23a-2
   sed-4.1.5-2
@@ -37,25 +37,64 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack vala-0.3.5-X-src.tar.bz2
+  unpack vala-0.5.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./vala-0.3.5-X.cygport all
+  cygport ./vala-0.5.1-X.cygport all
 
 This will create:
-  /usr/src/vala-0.3.5-X-src.tar.bz2
-  /usr/src/vala-0.3.5-X.tar.bz2
+  /usr/src/vala-0.5.1-X-src.tar.bz2
+  /usr/src/vala-0.5.1-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
+Files included in the binary packages:
 
-  /usr/bin/cygvala-0.dll
+(vala)
   /usr/bin/vala-gen-introspect
   /usr/bin/valac.exe
   /usr/bin/vapicheck.exe
   /usr/bin/vapigen.exe
+  /usr/lib/vala/gen-introspect.exe
+  /usr/share/devhelp/books/vala/attributes.html
+  /usr/share/devhelp/books/vala/classes.html
+  /usr/share/devhelp/books/vala/default.css
+  /usr/share/devhelp/books/vala/delegates.html
+  /usr/share/devhelp/books/vala/enums.html
+  /usr/share/devhelp/books/vala/exceptions.html
+  /usr/share/devhelp/books/vala/expressions.html
+  /usr/share/devhelp/books/vala/index.html
+  /usr/share/devhelp/books/vala/interfaces.html
+  /usr/share/devhelp/books/vala/methods.html
+  /usr/share/devhelp/books/vala/namespaces.html
+  /usr/share/devhelp/books/vala/overview.html
+  /usr/share/devhelp/books/vala/statements.html
+  /usr/share/devhelp/books/vala/structs.html
+  /usr/share/devhelp/books/vala/types.html
+  /usr/share/devhelp/books/vala/vala.devhelp2
+  /usr/share/doc/vala-0.5.1/AUTHORS
+  /usr/share/doc/vala-0.5.1/COPYING
+  /usr/share/doc/vala-0.5.1/ChangeLog
+  /usr/share/doc/vala-0.5.1/INSTALL
+  /usr/share/doc/vala-0.5.1/MAINTAINERS
+  /usr/share/doc/vala-0.5.1/NEWS
+  /usr/share/doc/vala-0.5.1/README
+  /usr/share/doc/vala-0.5.1/THANKS
+  /usr/share/man/man1/vala-gen-introspect.1.gz
+  /usr/share/man/man1/valac.1.gz
+  /usr/share/man/man1/vapigen.1.gz
+  /usr/share/vala/vapi/gio-2.0.vapi
+  /usr/share/vala/vapi/gio-unix-2.0.deps
+  /usr/share/vala/vapi/gio-unix-2.0.vapi
+  /usr/share/vala/vapi/glib-2.0.vapi
+  /usr/share/vala/vapi/gmodule-2.0.vapi
+  /usr/share/vala/vapi/gobject-2.0.vapi
+
+(libvala0)
+  /usr/bin/cygvala-0.dll
+
+(libvala-devel)
   /usr/include/vala-1.0/ccode/valaccodeassignment.h
   /usr/include/vala-1.0/ccode/valaccodebinaryexpression.h
   /usr/include/vala-1.0/ccode/valaccodeblock.h
@@ -107,6 +146,7 @@ Files included in the binary package:
   /usr/include/vala-1.0/ccode/valaccodewriter.h
   /usr/include/vala-1.0/gee/arraylist.h
   /usr/include/vala-1.0/gee/collection.h
+  /usr/include/vala-1.0/gee/collectionobject.h
   /usr/include/vala-1.0/gee/hashmap.h
   /usr/include/vala-1.0/gee/hashset.h
   /usr/include/vala-1.0/gee/iterable.h
@@ -118,27 +158,28 @@ Files included in the binary package:
   /usr/include/vala-1.0/gee/readonlymap.h
   /usr/include/vala-1.0/gee/readonlyset.h
   /usr/include/vala-1.0/gee/set.h
-  /usr/include/vala-1.0/gobject/valaccodearraycreationexpressionbinding.h
-  /usr/include/vala-1.0/gobject/valaccodeassignmentbinding.h
-  /usr/include/vala-1.0/gobject/valaccodebinding.h
-  /usr/include/vala-1.0/gobject/valaccodeclassbinding.h
+  /usr/include/vala-1.0/gobject/valaccodearraymodule.h
+  /usr/include/vala-1.0/gobject/valaccodeassignmentmodule.h
+  /usr/include/vala-1.0/gobject/valaccodebasemodule.h
   /usr/include/vala-1.0/gobject/valaccodecompiler.h
-  /usr/include/vala-1.0/gobject/valaccodecreationmethodbinding.h
-  /usr/include/vala-1.0/gobject/valaccodedynamicmethodbinding.h
-  /usr/include/vala-1.0/gobject/valaccodedynamicsignalbinding.h
-  /usr/include/vala-1.0/gobject/valaccodeelementaccessbinding.h
-  /usr/include/vala-1.0/gobject/valaccodeexpressionbinding.h
+  /usr/include/vala-1.0/gobject/valaccodedelegatemodule.h
+  /usr/include/vala-1.0/gobject/valaccodedynamicpropertymodule.h
+  /usr/include/vala-1.0/gobject/valaccodedynamicsignalmodule.h
   /usr/include/vala-1.0/gobject/valaccodegenerator.h
-  /usr/include/vala-1.0/gobject/valaccodegeneratorsignal.h
-  /usr/include/vala-1.0/gobject/valaccodegeneratorsourcefile.h
-  /usr/include/vala-1.0/gobject/valaccodegeneratorstruct.h
-  /usr/include/vala-1.0/gobject/valaccodeinterfacebinding.h
-  /usr/include/vala-1.0/gobject/valaccodeinvocationexpressionbinding.h
-  /usr/include/vala-1.0/gobject/valaccodememberaccessbinding.h
-  /usr/include/vala-1.0/gobject/valaccodemethodbinding.h
-  /usr/include/vala-1.0/gobject/valaccodetypesymbolbinding.h
+  /usr/include/vala-1.0/gobject/valaccodeinvocationexpressionmodule.h
+  /usr/include/vala-1.0/gobject/valaccodememberaccessmodule.h
+  /usr/include/vala-1.0/gobject/valaccodemethodmodule.h
+  /usr/include/vala-1.0/gobject/valaccodemodule.h
+  /usr/include/vala-1.0/gobject/valaccodestructmodule.h
   /usr/include/vala-1.0/gobject/valaclassregisterfunction.h
-  /usr/include/vala-1.0/gobject/valagidlwriter.h
+  /usr/include/vala-1.0/gobject/valadbusclientmodule.h
+  /usr/include/vala-1.0/gobject/valadbusservermodule.h
+  /usr/include/vala-1.0/gobject/valagasyncmodule.h
+  /usr/include/vala-1.0/gobject/valagerrormodule.h
+  /usr/include/vala-1.0/gobject/valagirwriter.h
+  /usr/include/vala-1.0/gobject/valagobjectmodule.h
+  /usr/include/vala-1.0/gobject/valagsignalmodule.h
+  /usr/include/vala-1.0/gobject/valagtypemodule.h
   /usr/include/vala-1.0/gobject/valainterfaceregisterfunction.h
   /usr/include/vala-1.0/gobject/valatyperegisterfunction.h
   /usr/include/vala-1.0/vala/vala.h
@@ -150,7 +191,6 @@ Files included in the binary package:
   /usr/include/vala-1.0/vala/valaarraytype.h
   /usr/include/vala-1.0/vala/valaassignment.h
   /usr/include/vala-1.0/vala/valaattribute.h
-  /usr/include/vala-1.0/vala/valaattributeprocessor.h
   /usr/include/vala-1.0/vala/valabaseaccess.h
   /usr/include/vala-1.0/vala/valabasicblock.h
   /usr/include/vala-1.0/vala/valabinaryexpression.h
@@ -162,9 +202,7 @@ Files included in the binary package:
   /usr/include/vala-1.0/vala/valacfgbuilder.h
   /usr/include/vala-1.0/vala/valacharacterliteral.h
   /usr/include/vala-1.0/vala/valaclass.h
-  /usr/include/vala-1.0/vala/valaclassinstancetype.h
   /usr/include/vala-1.0/vala/valaclasstype.h
-  /usr/include/vala-1.0/vala/valacodebinding.h
   /usr/include/vala-1.0/vala/valacodecontext.h
   /usr/include/vala-1.0/vala/valacodegenerator.h
   /usr/include/vala-1.0/vala/valacodenode.h
@@ -182,6 +220,7 @@ Files included in the binary package:
   /usr/include/vala-1.0/vala/valadestructor.h
   /usr/include/vala-1.0/vala/valadostatement.h
   /usr/include/vala-1.0/vala/valadynamicmethod.h
+  /usr/include/vala-1.0/vala/valadynamicproperty.h
   /usr/include/vala-1.0/vala/valadynamicsignal.h
   /usr/include/vala-1.0/vala/valaelementaccess.h
   /usr/include/vala-1.0/vala/valaemptystatement.h
@@ -206,7 +245,6 @@ Files included in the binary package:
   /usr/include/vala-1.0/vala/valaintegerliteral.h
   /usr/include/vala-1.0/vala/valaintegertype.h
   /usr/include/vala-1.0/vala/valainterface.h
-  /usr/include/vala-1.0/vala/valainterfaceinstancetype.h
   /usr/include/vala-1.0/vala/valainterfacetype.h
   /usr/include/vala-1.0/vala/valainterfacewriter.h
   /usr/include/vala-1.0/vala/valainvalidtype.h
@@ -219,16 +257,15 @@ Files included in the binary package:
   /usr/include/vala-1.0/vala/valamember.h
   /usr/include/vala-1.0/vala/valamemberaccess.h
   /usr/include/vala-1.0/vala/valamemberinitializer.h
-  /usr/include/vala-1.0/vala/valamemorymanager.h
   /usr/include/vala-1.0/vala/valamethod.h
   /usr/include/vala-1.0/vala/valamethodtype.h
-  /usr/include/vala-1.0/vala/valanamedargument.h
   /usr/include/vala-1.0/vala/valanamespace.h
-  /usr/include/vala-1.0/vala/valanamespacereference.h
   /usr/include/vala-1.0/vala/valanullchecker.h
   /usr/include/vala-1.0/vala/valanullliteral.h
   /usr/include/vala-1.0/vala/valanulltype.h
   /usr/include/vala-1.0/vala/valaobjectcreationexpression.h
+  /usr/include/vala-1.0/vala/valaobjecttype.h
+  /usr/include/vala-1.0/vala/valaobjecttypesymbol.h
   /usr/include/vala-1.0/vala/valaparenthesizedexpression.h
   /usr/include/vala-1.0/vala/valaparser.h
   /usr/include/vala-1.0/vala/valapointerindirection.h
@@ -271,62 +308,48 @@ Files included in the binary package:
   /usr/include/vala-1.0/vala/valaunaryexpression.h
   /usr/include/vala-1.0/vala/valaunresolvedsymbol.h
   /usr/include/vala-1.0/vala/valaunresolvedtype.h
+  /usr/include/vala-1.0/vala/valausingdirective.h
   /usr/include/vala-1.0/vala/valavaluetype.h
   /usr/include/vala-1.0/vala/valavoidtype.h
   /usr/include/vala-1.0/vala/valawhilestatement.h
+  /usr/include/vala-1.0/vala/valayieldstatement.h
   /usr/lib/libvala.dll.a
   /usr/lib/libvala.la
   /usr/lib/pkgconfig/vala-1.0.pc
-  /usr/lib/vala/gen-introspect.exe
-  /usr/share/devhelp/books/vala/attributes.html
-  /usr/share/devhelp/books/vala/classes.html
-  /usr/share/devhelp/books/vala/default.css
-  /usr/share/devhelp/books/vala/delegates.html
-  /usr/share/devhelp/books/vala/enums.html
-  /usr/share/devhelp/books/vala/exceptions.html
-  /usr/share/devhelp/books/vala/expressions.html
-  /usr/share/devhelp/books/vala/index.html
-  /usr/share/devhelp/books/vala/interfaces.html
-  /usr/share/devhelp/books/vala/methods.html
-  /usr/share/devhelp/books/vala/namespaces.html
-  /usr/share/devhelp/books/vala/overview.html
-  /usr/share/devhelp/books/vala/statements.html
-  /usr/share/devhelp/books/vala/structs.html
-  /usr/share/devhelp/books/vala/types.html
-  /usr/share/devhelp/books/vala/vala.devhelp2
-  /usr/share/doc/vala-0.3.5/AUTHORS
-  /usr/share/doc/vala-0.3.5/COPYING
-  /usr/share/doc/vala-0.3.5/ChangeLog
-  /usr/share/doc/vala-0.3.5/INSTALL
-  /usr/share/doc/vala-0.3.5/MAINTAINERS
-  /usr/share/doc/vala-0.3.5/NEWS
-  /usr/share/doc/vala-0.3.5/README
-  /usr/share/man/man1/vala-gen-introspect.1.gz
-  /usr/share/man/man1/valac.1.gz
-  /usr/share/man/man1/vapigen.1.gz
+  /usr/share/vala/vapi/vala-1.0.vapi
+
+(vala-*)
   /usr/share/vala/vapi/atk.vapi
+
   /usr/share/vala/vapi/bzlib.vapi
+
   /usr/share/vala/vapi/cairo.vapi
+
   /usr/share/vala/vapi/curses.vapi
+
   /usr/share/vala/vapi/dbus-glib-1.vapi
+
   /usr/share/vala/vapi/enchant.vapi
+
   /usr/share/vala/vapi/gconf-2.0.vapi
-  /usr/share/vala/vapi/gdk-2.0.deps
-  /usr/share/vala/vapi/gdk-2.0.vapi
+
+  /usr/share/vala/vapi/gdk-pixbuf-2.0.deps
   /usr/share/vala/vapi/gdk-pixbuf-2.0.vapi
-  /usr/share/vala/vapi/gdk-x11-2.0.deps
-  /usr/share/vala/vapi/gdk-x11-2.0.vapi
-  /usr/share/vala/vapi/gio-2.0.vapi
-  /usr/share/vala/vapi/gio-unix-2.0.deps
-  /usr/share/vala/vapi/gio-unix-2.0.vapi
-  /usr/share/vala/vapi/glib-2.0.vapi
-  /usr/share/vala/vapi/gmodule-2.0.vapi
+
+  /usr/share/vala/vapi/gnet-2.0.vapi
+
   /usr/share/vala/vapi/gnome-desktop-2.0.deps
   /usr/share/vala/vapi/gnome-desktop-2.0.vapi
+
   /usr/share/vala/vapi/gnome-keyring-1.vapi
+
   /usr/share/vala/vapi/gnome-vfs-2.0.vapi
+
   /usr/share/vala/vapi/goocanvas.deps
   /usr/share/vala/vapi/goocanvas.vapi
+
+  /usr/share/vala/vapi/gsl.vapi
+
   /usr/share/vala/vapi/gstreamer-0.10.deps
   /usr/share/vala/vapi/gstreamer-0.10.vapi
   /usr/share/vala/vapi/gstreamer-audio-0.10.deps
@@ -361,72 +384,95 @@ Files included in the binary package:
   /usr/share/vala/vapi/gstreamer-tag-0.10.vapi
   /usr/share/vala/vapi/gstreamer-video-0.10.deps
   /usr/share/vala/vapi/gstreamer-video-0.10.vapi
+
+  /usr/share/vala/vapi/gdk-2.0.deps
+  /usr/share/vala/vapi/gdk-2.0.vapi
+  /usr/share/vala/vapi/gdk-x11-2.0.deps
+  /usr/share/vala/vapi/gdk-x11-2.0.vapi
   /usr/share/vala/vapi/gtk+-2.0.deps
   /usr/share/vala/vapi/gtk+-2.0.vapi
-  /usr/share/vala/vapi/gtkmozembed.deps
-  /usr/share/vala/vapi/gtkmozembed.vapi
+
   /usr/share/vala/vapi/gtksourceview-2.0.deps
   /usr/share/vala/vapi/gtksourceview-2.0.vapi
-  /usr/share/vala/vapi/hal.deps
-  /usr/share/vala/vapi/hal.vapi
-  /usr/share/vala/vapi/hildon-1.deps
-  /usr/share/vala/vapi/hildon-1.vapi
-  /usr/share/vala/vapi/hildon-fm-2.deps
-  /usr/share/vala/vapi/hildon-fm-2.vapi
+
   /usr/share/vala/vapi/json-glib-1.0.vapi
+
   /usr/share/vala/vapi/libbonoboui-2.0.vapi
-  /usr/share/vala/vapi/libepc-1.0.vapi
-  /usr/share/vala/vapi/libftdi.deps
-  /usr/share/vala/vapi/libftdi.vapi
+
   /usr/share/vala/vapi/libglade-2.0.deps
   /usr/share/vala/vapi/libglade-2.0.vapi
+
   /usr/share/vala/vapi/libgnome-2.0.vapi
+
   /usr/share/vala/vapi/libgnome-menu.vapi
+
   /usr/share/vala/vapi/libgnomeui-2.0.deps
   /usr/share/vala/vapi/libgnomeui-2.0.vapi
+
   /usr/share/vala/vapi/libgsf-1.deps
   /usr/share/vala/vapi/libgsf-1.vapi
+
   /usr/share/vala/vapi/libnotify.deps
   /usr/share/vala/vapi/libnotify.vapi
-  /usr/share/vala/vapi/liboobs-1.vapi
+
   /usr/share/vala/vapi/libpanelapplet-2.0.deps
   /usr/share/vala/vapi/libpanelapplet-2.0.vapi
+
   /usr/share/vala/vapi/libsexy.deps
   /usr/share/vala/vapi/libsexy.vapi
+
   /usr/share/vala/vapi/libsoup-2.2.vapi
+
   /usr/share/vala/vapi/libsoup-2.4.deps
   /usr/share/vala/vapi/libsoup-2.4.vapi
+
   /usr/share/vala/vapi/libusb.vapi
+
   /usr/share/vala/vapi/libwnck-1.0.deps
   /usr/share/vala/vapi/libwnck-1.0.vapi
+
   /usr/share/vala/vapi/libxml-2.0.vapi
+
   /usr/share/vala/vapi/loudmouth-1.0.vapi
+
   /usr/share/vala/vapi/pango.deps
   /usr/share/vala/vapi/pango.vapi
   /usr/share/vala/vapi/pangocairo.deps
   /usr/share/vala/vapi/pangocairo.vapi
+
   /usr/share/vala/vapi/poppler-glib.deps
   /usr/share/vala/vapi/poppler-glib.vapi
+
   /usr/share/vala/vapi/sdl-gfx.vapi
   /usr/share/vala/vapi/sdl-image.vapi
   /usr/share/vala/vapi/sdl-mixer.vapi
+  /usr/share/vala/vapi/sdl-net.vapi
   /usr/share/vala/vapi/sdl-ttf.vapi
   /usr/share/vala/vapi/sdl.vapi
+
   /usr/share/vala/vapi/sqlite3.vapi
+
   /usr/share/vala/vapi/taglib_c.vapi
+
   /usr/share/vala/vapi/tiff.vapi
+
   /usr/share/vala/vapi/unique-1.0.deps
   /usr/share/vala/vapi/unique-1.0.vapi
-  /usr/share/vala/vapi/vala-1.0.vapi
+
   /usr/share/vala/vapi/vte.deps
   /usr/share/vala/vapi/vte.vapi
+
   /usr/share/vala/vapi/webkit-1.0.deps
   /usr/share/vala/vapi/webkit-1.0.vapi
+
   /usr/share/vala/vapi/zlib.vapi
 
 ------------------
 
 Port Notes:
+
+----- version 0.5.1-1 -----
+Version bump.
 
 ----- version 0.3.5-1 -----
 Version bump.

@@ -1,0 +1,8 @@
+category: Devel X11
+requires: vala libSDL-devel libSDL_gfx-devel libSDL_image-devel libSDL_mixer-devel libSDL_net-devel libSDL_ttf-devel
+external-source: vala
+sdesc: "Vala SDL bindings"
+ldesc: "Vala is a new programming language that aims to bring modern 
+programming language features to GNOME developers without imposing any 
+additional runtime requirements and without using a different ABI 
+compared to applications and libraries written in C."
