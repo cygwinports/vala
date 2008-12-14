@@ -1,0 +1,29 @@
+--- origsrc/vala-0.5.2/tests/testrunner.sh	2008-11-29 13:11:06.000000000 -0600
++++ src/vala-0.5.2/tests/testrunner.sh	2008-12-14 01:43:02.509515700 -0600
+@@ -29,7 +29,7 @@
+ export G_DEBUG=fatal_warnings
+ 
+ VALAC=$topbuilddir/compiler/valac
+-CC="gcc -std=c99"
++CC="gcc -std=gnu99"
+ CFLAGS="-O0 -g3 -I$topsrcdir -I$topbuilddir"
+ LDLIBS="-lm"
+ 
+@@ -58,7 +58,7 @@
+ function sourceend() {
+ 	if [ -n "$PROGRAM" ]; then
+ 		echo "$VALAC $(echo $PACKAGES | xargs -n 1 -r echo --pkg) -C $SOURCEFILE" >> build
+-		echo "$CC $CFLAGS $LDLIBS \$(pkg-config --cflags --libs glib-2.0 gobject-2.0 $PACKAGES) -o $PROGRAM$EXEEXT $PROGRAM.c" >> build
++		echo "$CC $CFLAGS $PROGRAM.c $LDLIBS \$(pkg-config --cflags --libs glib-2.0 gobject-2.0 $PACKAGES) -o $PROGRAM$EXEEXT" >> build
+ 		echo "./$PROGRAM$EXEEXT" > check
+ 	fi
+ }
+@@ -78,7 +78,7 @@
+ 	INHEADER=1
+ 	PACKAGES=
+ 	PROGRAM=
+-	cat "$builddir/$testfile" | while true; do
++	cat "$testfile" | while true; do
+ 		if IFS="" read -r line; then
+ 			if [ $PART -eq 0 ]; then
+ 				if [ -n "$line" ]; then

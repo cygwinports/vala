@@ -8,21 +8,20 @@ applications and libraries written in C.
 Runtime requirements:
   cygwin-1.5.25-15
   gcc-core
-  glib2-2.16.6-1
-  glib2-devel
+  libglib2.0_0-2.18.3-1
   pkg-config
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-1
-  automake1.10-1.10.1-1
+  automake1.10-1.10.1-2
   binutils-20080624-2
   bison-2.3-1
-  cygport-0.4.2-1
+  cygport-0.4.3-1
   flex-2.5.35-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gnome-common-2.20.0-2
+  gnome-common-2.24.0-1
   libtool-2.2.6a-1
   make-3.81-1
   pkg-config-0.23a-2
@@ -37,15 +36,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack vala-0.5.1-X-src.tar.bz2
+  unpack vala-0.5.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./vala-0.5.1-X.cygport all
+  cygport ./vala-0.5.2-X.cygport all
 
 This will create:
-  /usr/src/vala-0.5.1-X-src.tar.bz2
-  /usr/src/vala-0.5.1-X.tar.bz2
+  /usr/src/libvala-devel-0.5.2-X.tar.bz2
+  /usr/src/libvala0-0.5.2-X.tar.bz2
+  /usr/src/vala-0.5.2-X-src.tar.bz2
+  /usr/src/vala-0.5.2-X.tar.bz2
+  /usr/src/vala-*-0.5.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -73,14 +75,14 @@ Files included in the binary packages:
   /usr/share/devhelp/books/vala/structs.html
   /usr/share/devhelp/books/vala/types.html
   /usr/share/devhelp/books/vala/vala.devhelp2
-  /usr/share/doc/vala-0.5.1/AUTHORS
-  /usr/share/doc/vala-0.5.1/COPYING
-  /usr/share/doc/vala-0.5.1/ChangeLog
-  /usr/share/doc/vala-0.5.1/INSTALL
-  /usr/share/doc/vala-0.5.1/MAINTAINERS
-  /usr/share/doc/vala-0.5.1/NEWS
-  /usr/share/doc/vala-0.5.1/README
-  /usr/share/doc/vala-0.5.1/THANKS
+  /usr/share/doc/vala-0.5.2/AUTHORS
+  /usr/share/doc/vala-0.5.2/COPYING
+  /usr/share/doc/vala-0.5.2/ChangeLog
+  /usr/share/doc/vala-0.5.2/INSTALL
+  /usr/share/doc/vala-0.5.2/MAINTAINERS
+  /usr/share/doc/vala-0.5.2/NEWS
+  /usr/share/doc/vala-0.5.2/README
+  /usr/share/doc/vala-0.5.2/THANKS
   /usr/share/man/man1/vala-gen-introspect.1.gz
   /usr/share/man/man1/valac.1.gz
   /usr/share/man/man1/vapigen.1.gz
@@ -470,6 +472,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.5.2-1 -----
+Version bump.
 
 ----- version 0.5.1-1 -----
 Version bump.

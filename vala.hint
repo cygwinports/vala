@@ -1,5 +1,5 @@
 category: Devel Gnome Interpreters
-requires: cygwin glib2 glib2-devel libvala0 pkg-config gcc-core
+requires: cygwin libglib2.0_0 libglib2.0-devel libvala0 pkg-config gcc-core
 sdesc: "Compiler for the GObject type system"
 ldesc: "Vala is a new programming language that aims to bring modern 
 programming language features to GNOME developers without imposing any 

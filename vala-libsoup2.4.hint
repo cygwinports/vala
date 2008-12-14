@@ -1,5 +1,5 @@
 category: Devel Gnome
-requires: vala libsoup24-devel
+requires: vala libsoup2.4-devel
 external-source: vala
 sdesc: "Vala libsoup-2.4 bindings"
 ldesc: "Vala is a new programming language that aims to bring modern 

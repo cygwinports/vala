@@ -1,5 +1,5 @@
 category: Devel Gnome
-requires: vala gnome-vfs2-devel
+requires: vala libgnomevfs2-devel
 external-source: vala
 sdesc: "Vala gnome-vfs2 bindings"
 ldesc: "Vala is a new programming language that aims to bring modern 

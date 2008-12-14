@@ -1,5 +1,5 @@
 category: Devel Gnome
-requires: vala pango-devel vala-cairo
+requires: vala libpango1.0-devel vala-cairo
 external-source: vala
 sdesc: "Vala pango bindings"
 ldesc: "Vala is a new programming language that aims to bring modern 

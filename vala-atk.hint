@@ -1,5 +1,5 @@
 category: Devel Gnome
-requires: vala atk-devel
+requires: vala libatk1.0-devel
 external-source: vala
 sdesc: "Vala ATK bindings"
 ldesc: "Vala is a new programming language that aims to bring modern 

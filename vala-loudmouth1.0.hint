@@ -1,5 +1,5 @@
 category: Devel Gnome
-requires: vala loudmouth-devel
+requires: vala libloudmouth1-devel
 external-source: vala
 sdesc: "Vala loudmouth-1.0 bindings"
 ldesc: "Vala is a new programming language that aims to bring modern 

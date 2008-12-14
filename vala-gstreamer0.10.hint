@@ -1,5 +1,5 @@
 category: Devel Gnome
-requires: vala gstreamer010-devel gstreamer010-plugins-base-devel
+requires: vala libgstreamer0.10-devel gstreamer010-plugins-base-devel
 external-source: vala
 sdesc: "Vala GStreamer 0.10 bindings"
 ldesc: "Vala is a new programming language that aims to bring modern 

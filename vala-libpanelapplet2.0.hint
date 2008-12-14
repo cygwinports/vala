@@ -1,5 +1,5 @@
 category: Devel Gnome
-requires: vala gnome-panel-devel vala-gtk2.0 vala-libgnomeui2.0 vala-libbonoboui2.0
+requires: vala libpanel-applet2-devel vala-gtk2.0 vala-libgnomeui2.0 vala-libbonoboui2.0
 external-source: vala
 sdesc: "Vala gnome-panel bindings"
 ldesc: "Vala is a new programming language that aims to bring modern 

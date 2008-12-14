@@ -1,5 +1,5 @@
 category: Devel Gnome
-requires: vala libglade2-devel vala-atk vala-cairo vala-gdk-pixbuf2.0 vala-gtk2.0 vala-pango
+requires: vala libglade2.0-devel vala-atk vala-cairo vala-gdk-pixbuf2.0 vala-gtk2.0 vala-pango
 external-source: vala
 sdesc: "Vala libglade-2.0 bindings"
 ldesc: "Vala is a new programming language that aims to bring modern 

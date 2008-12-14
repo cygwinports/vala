@@ -1,5 +1,5 @@
 category: Devel Gnome
-requires: vala gdk-pixbuf2-devel
+requires: vala libgdk_pixbuf2.0-devel
 external-source: vala
 sdesc: "Vala GDK-Pixbuf2 bindings"
 ldesc: "Vala is a new programming language that aims to bring modern 

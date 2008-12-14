@@ -1,5 +1,5 @@
 category: Devel Gnome
-requires: vala GConf2-devel
+requires: vala libgconf2-devel
 external-source: vala
 sdesc: "Vala GConf2 bindings"
 ldesc: "Vala is a new programming language that aims to bring modern 

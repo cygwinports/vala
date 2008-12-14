@@ -1,5 +1,5 @@
 category: Devel
-requires: vala taglib-devel
+requires: vala libtag_c-devel
 external-source: vala
 sdesc: "Vala TagLib bindings"
 ldesc: "Vala is a new programming language that aims to bring modern 

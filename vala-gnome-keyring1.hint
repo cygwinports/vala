@@ -1,5 +1,5 @@
 category: Devel Gnome
-requires: vala gnome-keyring-devel
+requires: vala libgnome-keyring-devel
 external-source: vala
 sdesc: "Vala gnome-keyring bindings"
 ldesc: "Vala is a new programming language that aims to bring modern 
