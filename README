@@ -36,18 +36,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack vala-0.5.2-X-src.tar.bz2
+  unpack vala-0.5.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./vala-0.5.2-X.cygport all
+  cygport ./vala-0.5.3-X.cygport all
 
 This will create:
-  /usr/src/libvala-devel-0.5.2-X.tar.bz2
-  /usr/src/libvala0-0.5.2-X.tar.bz2
-  /usr/src/vala-0.5.2-X-src.tar.bz2
-  /usr/src/vala-0.5.2-X.tar.bz2
-  /usr/src/vala-*-0.5.2-X.tar.bz2
+  /usr/src/libvala-devel-0.5.3-X.tar.bz2
+  /usr/src/libvala0-0.5.3-X.tar.bz2
+  /usr/src/vala-0.5.3-X-src.tar.bz2
+  /usr/src/vala-0.5.3-X.tar.bz2
+  /usr/src/vala-*-0.5.3-X.tar.bz2
 
 -------------------------------------------
 
@@ -75,14 +75,14 @@ Files included in the binary packages:
   /usr/share/devhelp/books/vala/structs.html
   /usr/share/devhelp/books/vala/types.html
   /usr/share/devhelp/books/vala/vala.devhelp2
-  /usr/share/doc/vala-0.5.2/AUTHORS
-  /usr/share/doc/vala-0.5.2/COPYING
-  /usr/share/doc/vala-0.5.2/ChangeLog
-  /usr/share/doc/vala-0.5.2/INSTALL
-  /usr/share/doc/vala-0.5.2/MAINTAINERS
-  /usr/share/doc/vala-0.5.2/NEWS
-  /usr/share/doc/vala-0.5.2/README
-  /usr/share/doc/vala-0.5.2/THANKS
+  /usr/share/doc/vala-0.5.3/AUTHORS
+  /usr/share/doc/vala-0.5.3/COPYING
+  /usr/share/doc/vala-0.5.3/ChangeLog
+  /usr/share/doc/vala-0.5.3/INSTALL
+  /usr/share/doc/vala-0.5.3/MAINTAINERS
+  /usr/share/doc/vala-0.5.3/NEWS
+  /usr/share/doc/vala-0.5.3/README
+  /usr/share/doc/vala-0.5.3/THANKS
   /usr/share/man/man1/vala-gen-introspect.1.gz
   /usr/share/man/man1/valac.1.gz
   /usr/share/man/man1/vapigen.1.gz
@@ -445,6 +445,10 @@ Files included in the binary packages:
   /usr/share/vala/vapi/poppler-glib.deps
   /usr/share/vala/vapi/poppler-glib.vapi
 
+  /usr/share/vala/vapi/raptor.vapi
+
+  /usr/share/vala/vapi/rasqal.vapi
+
   /usr/share/vala/vapi/sdl-gfx.vapi
   /usr/share/vala/vapi/sdl-image.vapi
   /usr/share/vala/vapi/sdl-mixer.vapi
@@ -472,6 +476,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.5.3-1 -----
+Version bump.
 
 ----- version 0.5.2-1 -----
 Version bump.

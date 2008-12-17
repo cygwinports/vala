@@ -1,0 +1,20 @@
+--- origsrc/vala-0.5.3/tests/testrunner.sh	2008-12-16 16:27:56.000000000 -0600
++++ src/vala-0.5.3/tests/testrunner.sh	2008-12-17 12:47:16.993875000 -0600
+@@ -30,7 +30,7 @@
+ 
+ VALAC=$topbuilddir/compiler/valac
+ VALAFLAGS="--vapidir $vapidir"
+-CC="gcc -std=c99"
++CC="gcc -std=gnu99"
+ CFLAGS="-O0 -g3 -I$topsrcdir -I$topbuilddir"
+ LDLIBS="-lm"
+ 
+@@ -79,7 +79,7 @@
+ 	INHEADER=1
+ 	PACKAGES=
+ 	PROGRAM=
+-	cat "$builddir/$testfile" | while true; do
++	cat "$testfile" | while true; do
+ 		if IFS="" read -r line; then
+ 			if [ $PART -eq 0 ]; then
+ 				if [ -n "$line" ]; then
