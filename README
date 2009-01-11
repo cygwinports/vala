@@ -8,7 +8,7 @@ applications and libraries written in C.
 Runtime requirements:
   cygwin-1.5.25-15
   gcc-core
-  libglib2.0_0-2.18.3-1
+  libglib2.0_0-2.18.4-1
   pkg-config
 
 Build requirements:
@@ -36,18 +36,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack vala-0.5.3-X-src.tar.bz2
+  unpack vala-0.5.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./vala-0.5.3-X.cygport all
+  cygport ./vala-0.5.5-X.cygport all
 
 This will create:
-  /usr/src/libvala-devel-0.5.3-X.tar.bz2
-  /usr/src/libvala0-0.5.3-X.tar.bz2
-  /usr/src/vala-0.5.3-X-src.tar.bz2
-  /usr/src/vala-0.5.3-X.tar.bz2
-  /usr/src/vala-*-0.5.3-X.tar.bz2
+  /usr/src/libvala-devel-0.5.5-X.tar.bz2
+  /usr/src/libvala0-0.5.5-X.tar.bz2
+  /usr/src/vala-0.5.5-X-src.tar.bz2
+  /usr/src/vala-0.5.5-X.tar.bz2
+  /usr/src/vala-*-0.5.5-X.tar.bz2
 
 -------------------------------------------
 
@@ -75,14 +75,14 @@ Files included in the binary packages:
   /usr/share/devhelp/books/vala/structs.html
   /usr/share/devhelp/books/vala/types.html
   /usr/share/devhelp/books/vala/vala.devhelp2
-  /usr/share/doc/vala-0.5.3/AUTHORS
-  /usr/share/doc/vala-0.5.3/COPYING
-  /usr/share/doc/vala-0.5.3/ChangeLog
-  /usr/share/doc/vala-0.5.3/INSTALL
-  /usr/share/doc/vala-0.5.3/MAINTAINERS
-  /usr/share/doc/vala-0.5.3/NEWS
-  /usr/share/doc/vala-0.5.3/README
-  /usr/share/doc/vala-0.5.3/THANKS
+  /usr/share/doc/vala-0.5.5/AUTHORS
+  /usr/share/doc/vala-0.5.5/COPYING
+  /usr/share/doc/vala-0.5.5/ChangeLog
+  /usr/share/doc/vala-0.5.5/INSTALL
+  /usr/share/doc/vala-0.5.5/MAINTAINERS
+  /usr/share/doc/vala-0.5.5/NEWS
+  /usr/share/doc/vala-0.5.5/README
+  /usr/share/doc/vala-0.5.5/THANKS
   /usr/share/man/man1/vala-gen-introspect.1.gz
   /usr/share/man/man1/valac.1.gz
   /usr/share/man/man1/vapigen.1.gz
@@ -476,6 +476,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.5.5-1 -----
+Version bump.
 
 ----- version 0.5.3-1 -----
 Version bump.
