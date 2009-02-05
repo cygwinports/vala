@@ -437,6 +437,10 @@ Files included in the binary packages:
 
   /usr/share/vala/vapi/loudmouth-1.0.vapi
 
+  /usr/share/vala/vapi/lua.vapi
+
+  /usr/share/vala/vapi/mysql.vapi
+
   /usr/share/vala/vapi/pango.deps
   /usr/share/vala/vapi/pango.vapi
   /usr/share/vala/vapi/pangocairo.deps

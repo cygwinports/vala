@@ -27,7 +27,7 @@ for vapi in atk bzlib cairo curses dbus-glib-1 enchant gconf-2.0 \
 			libbonoboui-2.0 libglade-2.0 libgnome-2.0 libgnome-menu \
 			libgnomeui-2.0 libgsf-1 libnotify libpanelapplet-2.0 libsexy \
 			libsoup-2.2 libsoup-2.4 libusb libwnck-1.0 libxml-2.0 \
-			loudmouth-1.0 pango poppler-glib raptor rasqal sdl sqlite3 \
+			loudmouth-1.0 lua mysql pango poppler-glib raptor rasqal sdl sqlite3 \
 			taglib_c tiff unique-1.0 vte webkit-1.0 zlib
 do
 	vapi_pkg=$(echo ${vapi} | sed -e 's/\-\([0-9]\)/\1/')
