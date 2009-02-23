@@ -24,7 +24,7 @@ vala_CONTENTS+=" --exclude=gstreamer*-0.10.*"
 for vapi in atk bzlib cairo curses dbus-glib-1 enchant gconf-2.0 \
             gdk-pixbuf-2.0 gnet-2.0 gnome-desktop-2.0 gnome-keyring-1 \
 			gnome-vfs-2.0 goocanvas gsl gtksourceview-2.0 json-glib-1.0 \
-			libbonoboui-2.0 libglade-2.0 libgnome-2.0 libgnome-menu \
+			libbonoboui-2.0 libdaemon libglade-2.0 libgnome-2.0 libgnome-menu \
 			libgnomeui-2.0 libgsf-1 libnotify libpanelapplet-2.0 libsexy \
 			libsoup-2.2 libsoup-2.4 libusb libwnck-1.0 libxml-2.0 \
 			loudmouth-1.0 lua mysql pango poppler-glib raptor rasqal sdl sqlite3 \
@@ -36,7 +36,7 @@ do
 	vala_CONTENTS+=" --exclude=${vapi}*.*"
 done
 
-for vapi in gtkmozembed hal hildon-1 hildon-fm-2 libepc-1.0 libftdi \
+for vapi in fuse gtkmozembed hal hildon-1 hildon-fm-2 libepc-1.0 libftdi \
             liboobs-1 tracker-indexer-module-1.0
 do
 	PKG_IGNORE+=" ${vapidir}/${vapi}.*"

@@ -36,18 +36,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack vala-0.5.5-X-src.tar.bz2
+  unpack vala-0.5.7-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./vala-0.5.5-X.cygport all
+  cygport ./vala-0.5.7-X.cygport all
 
 This will create:
-  /usr/src/libvala-devel-0.5.5-X.tar.bz2
-  /usr/src/libvala0-0.5.5-X.tar.bz2
-  /usr/src/vala-0.5.5-X-src.tar.bz2
-  /usr/src/vala-0.5.5-X.tar.bz2
-  /usr/src/vala-*-0.5.5-X.tar.bz2
+  /usr/src/libvala-devel-0.5.7-X.tar.bz2
+  /usr/src/libvala0-0.5.7-X.tar.bz2
+  /usr/src/vala-0.5.7-X-src.tar.bz2
+  /usr/src/vala-0.5.7-X.tar.bz2
+  /usr/src/vala-*-0.5.7-X.tar.bz2
 
 -------------------------------------------
 
@@ -75,14 +75,14 @@ Files included in the binary packages:
   /usr/share/devhelp/books/vala/structs.html
   /usr/share/devhelp/books/vala/types.html
   /usr/share/devhelp/books/vala/vala.devhelp2
-  /usr/share/doc/vala-0.5.5/AUTHORS
-  /usr/share/doc/vala-0.5.5/COPYING
-  /usr/share/doc/vala-0.5.5/ChangeLog
-  /usr/share/doc/vala-0.5.5/INSTALL
-  /usr/share/doc/vala-0.5.5/MAINTAINERS
-  /usr/share/doc/vala-0.5.5/NEWS
-  /usr/share/doc/vala-0.5.5/README
-  /usr/share/doc/vala-0.5.5/THANKS
+  /usr/share/doc/vala-0.5.7/AUTHORS
+  /usr/share/doc/vala-0.5.7/COPYING
+  /usr/share/doc/vala-0.5.7/ChangeLog
+  /usr/share/doc/vala-0.5.7/INSTALL
+  /usr/share/doc/vala-0.5.7/MAINTAINERS
+  /usr/share/doc/vala-0.5.7/NEWS
+  /usr/share/doc/vala-0.5.7/README
+  /usr/share/doc/vala-0.5.7/THANKS
   /usr/share/man/man1/vala-gen-introspect.1.gz
   /usr/share/man/man1/valac.1.gz
   /usr/share/man/man1/vapigen.1.gz
@@ -401,6 +401,8 @@ Files included in the binary packages:
 
   /usr/share/vala/vapi/libbonoboui-2.0.vapi
 
+  /usr/share/vala/vapi/libdaemon.vapi
+
   /usr/share/vala/vapi/libglade-2.0.deps
   /usr/share/vala/vapi/libglade-2.0.vapi
 
@@ -480,6 +482,12 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.5.7-1 -----
+Version bump.
+
+----- version 0.5.6-1 -----
+Version bump.
 
 ----- version 0.5.5-1 -----
 Version bump.
