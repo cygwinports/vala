@@ -1,7 +1,7 @@
-category: Devel Gnome
-requires: vala libsexy-devel vala-atk vala-cairo vala-gdk-pixbuf2.0 vala-gtk2.0 vala-pango
+category: Devel X11
+requires: vala libxcb-devel
 external-source: vala
-sdesc: "Vala libsexy bindings"
+sdesc: "Vala XCB bindings"
 ldesc: "Vala is a new programming language that aims to bring modern 
 programming language features to GNOME developers without imposing any 
 additional runtime requirements and without using a different ABI 

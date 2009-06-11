@@ -1,15 +1,15 @@
---- origsrc/vala-0.5.3/tests/testrunner.sh	2008-12-16 16:27:56.000000000 -0600
-+++ src/vala-0.5.3/tests/testrunner.sh	2008-12-17 12:47:16.993875000 -0600
-@@ -30,7 +30,7 @@
+--- origsrc/vala-0.7.3/tests/testrunner.sh	2009-05-05 16:51:39.000000000 -0500
++++ src/vala-0.7.3/tests/testrunner.sh	2009-06-10 15:53:13.191179600 -0500
+@@ -30,7 +30,7 @@ export G_DEBUG=fatal_warnings
  
  VALAC=$topbuilddir/compiler/valac
  VALAFLAGS="--vapidir $vapidir"
 -CC="gcc -std=c99"
 +CC="gcc -std=gnu99"
- CFLAGS="-O0 -g3 -I$topsrcdir -I$topbuilddir"
+ CFLAGS="-O0 -g3"
  LDLIBS="-lm"
  
-@@ -79,7 +79,7 @@
+@@ -79,7 +79,7 @@ for testfile in "$@"; do
  	INHEADER=1
  	PACKAGES=
  	PROGRAM=

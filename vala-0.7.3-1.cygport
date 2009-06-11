@@ -3,7 +3,7 @@ inherit gnome2
 DESCRIPTION="Compiler for the GObject type system"
 HOMEPAGE="http://live.gnome.org/Vala"
 
-PATCH_URI="0.5.3-testrunner.patch"
+PATCH_URI="0.7.3-testrunner.patch"
 
 vapidir=usr/share/vala/vapi
 
@@ -22,13 +22,13 @@ vala_gstreamer0_10_CONTENTS="${vapidir}/gstreamer*-0.10.*"
 vala_CONTENTS+=" --exclude=gstreamer*-0.10.*"
 
 for vapi in atk bzlib cairo curses dbus-glib-1 enchant gconf-2.0 \
-            gdk-pixbuf-2.0 gnet-2.0 gnome-desktop-2.0 gnome-keyring-1 \
+            gdk-pixbuf-2.0 gnome-desktop-2.0 gnome-keyring-1 \
 			gnome-vfs-2.0 goocanvas gsl gtksourceview-2.0 json-glib-1.0 \
 			libbonoboui-2.0 libdaemon libglade-2.0 libgnome-2.0 libgnome-menu \
-			libgnomeui-2.0 libgsf-1 libnotify libpanelapplet-2.0 librsvg-2.0 libsexy \
+			libgnomeui-2.0 libgsf-1 libnotify libpanelapplet-2.0 librsvg-2.0 \
 			libsoup-2.2 libsoup-2.4 libusb libwnck-1.0 libxml-2.0 \
 			loudmouth-1.0 lua mysql pango poppler-glib raptor rasqal sdl sqlite3 \
-			taglib_c tiff unique-1.0 vte webkit-1.0 zlib
+			taglib_c tiff unique-1.0 vte webkit-1.0 x11 xcb zlib
 do
 	vapi_pkg=$(echo ${vapi} | sed -e 's/\-\([0-9]\)/\1/')
 	PKG_NAMES+=" vala-${vapi_pkg}"
@@ -37,7 +37,7 @@ do
 done
 
 for vapi in fuse gtkmozembed hal hildon-1 hildon-fm-2 libepc-1.0 libftdi \
-            liboobs-1 libosso tracker-indexer-module-1.0 v4l2
+            liboobs-1 libosso libsexy tracker-indexer-module-1.0 v4l2
 do
 	PKG_IGNORE+=" ${vapidir}/${vapi}.*"
 	vala_CONTENTS+=" --exclude=${vapi}.*"

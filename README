@@ -6,25 +6,25 @@ runtime requirements and without using a different ABI compared to
 applications and libraries written in C.
 
 Runtime requirements:
-  cygwin-1.7.0-44
+  cygwin-1.7.0-48
   gcc4-core
-  libglib2.0_0-2.20.0-1
+  libglib2.0_0-2.20.3-1
   pkg-config
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
+  automake1.10-1.10.2-10
   binutils-20080624-2
   bison-2.3-1
   cygport-0.9.6-1
   flex-2.5.35-1
   gawk-3.1.6-2
   gcc4-core-4.3.2-2
-  gnome-common-2.26.0-1
-  libtool-2.2.7a-11
+  gnome-common-2.26.0-2
+  libtool-2.2.7a-12
   make-3.81-2
-  pkg-config-0.23a-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -36,18 +36,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack vala-0.6.0-X-src.tar.bz2
+  unpack vala-0.7.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./vala-0.6.0-X.cygport all
+  cygport ./vala-0.7.3-X.cygport all
 
 This will create:
-  /usr/src/libvala-devel-0.6.0-X.tar.bz2
-  /usr/src/libvala0-0.6.0-X.tar.bz2
-  /usr/src/vala-0.6.0-X-src.tar.bz2
-  /usr/src/vala-0.6.0-X.tar.bz2
-  /usr/src/vala-*-0.6.0-X.tar.bz2
+  /usr/src/libvala-devel-0.7.3-X.tar.bz2
+  /usr/src/libvala0-0.7.3-X.tar.bz2
+  /usr/src/vala-0.7.3-X-src.tar.bz2
+  /usr/src/vala-0.7.3-X.tar.bz2
+  /usr/src/vala-*-0.7.3-X.tar.bz2
 
 -------------------------------------------
 
@@ -91,229 +91,16 @@ Files included in the binary packages:
   /usr/share/vala/vapi/glib-2.0.vapi
   /usr/share/vala/vapi/gmodule-2.0.vapi
   /usr/share/vala/vapi/gobject-2.0.vapi
+  /usr/share/vala/vapi/posix.vapi
 
 (libvala0)
   /usr/bin/cygvala-0.dll
 
 (libvala-devel)
-  /usr/include/vala-1.0/ccode/valaccodeassignment.h
-  /usr/include/vala-1.0/ccode/valaccodebinaryexpression.h
-  /usr/include/vala-1.0/ccode/valaccodeblock.h
-  /usr/include/vala-1.0/ccode/valaccodebreakstatement.h
-  /usr/include/vala-1.0/ccode/valaccodecasestatement.h
-  /usr/include/vala-1.0/ccode/valaccodecastexpression.h
-  /usr/include/vala-1.0/ccode/valaccodecommaexpression.h
-  /usr/include/vala-1.0/ccode/valaccodecomment.h
-  /usr/include/vala-1.0/ccode/valaccodeconditionalexpression.h
-  /usr/include/vala-1.0/ccode/valaccodeconstant.h
-  /usr/include/vala-1.0/ccode/valaccodecontinuestatement.h
-  /usr/include/vala-1.0/ccode/valaccodedeclaration.h
-  /usr/include/vala-1.0/ccode/valaccodedeclarator.h
-  /usr/include/vala-1.0/ccode/valaccodedostatement.h
-  /usr/include/vala-1.0/ccode/valaccodeelementaccess.h
-  /usr/include/vala-1.0/ccode/valaccodeemptystatement.h
-  /usr/include/vala-1.0/ccode/valaccodeenum.h
-  /usr/include/vala-1.0/ccode/valaccodeenumvalue.h
-  /usr/include/vala-1.0/ccode/valaccodeexpression.h
-  /usr/include/vala-1.0/ccode/valaccodeexpressionstatement.h
-  /usr/include/vala-1.0/ccode/valaccodeformalparameter.h
-  /usr/include/vala-1.0/ccode/valaccodeforstatement.h
-  /usr/include/vala-1.0/ccode/valaccodefragment.h
-  /usr/include/vala-1.0/ccode/valaccodefunction.h
-  /usr/include/vala-1.0/ccode/valaccodefunctioncall.h
-  /usr/include/vala-1.0/ccode/valaccodefunctiondeclarator.h
-  /usr/include/vala-1.0/ccode/valaccodegotostatement.h
-  /usr/include/vala-1.0/ccode/valaccodeidentifier.h
-  /usr/include/vala-1.0/ccode/valaccodeifstatement.h
-  /usr/include/vala-1.0/ccode/valaccodeincludedirective.h
-  /usr/include/vala-1.0/ccode/valaccodeinitializerlist.h
-  /usr/include/vala-1.0/ccode/valaccodelabel.h
-  /usr/include/vala-1.0/ccode/valaccodelinedirective.h
-  /usr/include/vala-1.0/ccode/valaccodemacroreplacement.h
-  /usr/include/vala-1.0/ccode/valaccodememberaccess.h
-  /usr/include/vala-1.0/ccode/valaccodemodifiers.h
-  /usr/include/vala-1.0/ccode/valaccodenewline.h
-  /usr/include/vala-1.0/ccode/valaccodenode.h
-  /usr/include/vala-1.0/ccode/valaccodeoncesection.h
-  /usr/include/vala-1.0/ccode/valaccodeparenthesizedexpression.h
-  /usr/include/vala-1.0/ccode/valaccodereturnstatement.h
-  /usr/include/vala-1.0/ccode/valaccodestatement.h
-  /usr/include/vala-1.0/ccode/valaccodestruct.h
-  /usr/include/vala-1.0/ccode/valaccodeswitchstatement.h
-  /usr/include/vala-1.0/ccode/valaccodetypedefinition.h
-  /usr/include/vala-1.0/ccode/valaccodeunaryexpression.h
-  /usr/include/vala-1.0/ccode/valaccodevariabledeclarator.h
-  /usr/include/vala-1.0/ccode/valaccodewhilestatement.h
-  /usr/include/vala-1.0/ccode/valaccodewriter.h
-  /usr/include/vala-1.0/gee/arraylist.h
-  /usr/include/vala-1.0/gee/collection.h
-  /usr/include/vala-1.0/gee/collectionobject.h
-  /usr/include/vala-1.0/gee/hashmap.h
-  /usr/include/vala-1.0/gee/hashset.h
-  /usr/include/vala-1.0/gee/iterable.h
-  /usr/include/vala-1.0/gee/iterator.h
-  /usr/include/vala-1.0/gee/list.h
-  /usr/include/vala-1.0/gee/map.h
-  /usr/include/vala-1.0/gee/readonlycollection.h
-  /usr/include/vala-1.0/gee/readonlylist.h
-  /usr/include/vala-1.0/gee/readonlymap.h
-  /usr/include/vala-1.0/gee/readonlyset.h
-  /usr/include/vala-1.0/gee/set.h
-  /usr/include/vala-1.0/gobject/valaccodearraymodule.h
-  /usr/include/vala-1.0/gobject/valaccodeassignmentmodule.h
-  /usr/include/vala-1.0/gobject/valaccodebasemodule.h
-  /usr/include/vala-1.0/gobject/valaccodecompiler.h
-  /usr/include/vala-1.0/gobject/valaccodedelegatemodule.h
-  /usr/include/vala-1.0/gobject/valaccodedynamicpropertymodule.h
-  /usr/include/vala-1.0/gobject/valaccodedynamicsignalmodule.h
-  /usr/include/vala-1.0/gobject/valaccodegenerator.h
-  /usr/include/vala-1.0/gobject/valaccodeinvocationexpressionmodule.h
-  /usr/include/vala-1.0/gobject/valaccodememberaccessmodule.h
-  /usr/include/vala-1.0/gobject/valaccodemethodmodule.h
-  /usr/include/vala-1.0/gobject/valaccodemodule.h
-  /usr/include/vala-1.0/gobject/valaccodestructmodule.h
-  /usr/include/vala-1.0/gobject/valaclassregisterfunction.h
-  /usr/include/vala-1.0/gobject/valadbusclientmodule.h
-  /usr/include/vala-1.0/gobject/valadbusservermodule.h
-  /usr/include/vala-1.0/gobject/valagasyncmodule.h
-  /usr/include/vala-1.0/gobject/valagerrormodule.h
-  /usr/include/vala-1.0/gobject/valagirwriter.h
-  /usr/include/vala-1.0/gobject/valagobjectmodule.h
-  /usr/include/vala-1.0/gobject/valagsignalmodule.h
-  /usr/include/vala-1.0/gobject/valagtypemodule.h
-  /usr/include/vala-1.0/gobject/valainterfaceregisterfunction.h
-  /usr/include/vala-1.0/gobject/valatyperegisterfunction.h
-  /usr/include/vala-1.0/vala/vala.h
-  /usr/include/vala-1.0/vala/valaaddressofexpression.h
-  /usr/include/vala-1.0/vala/valaarraycreationexpression.h
-  /usr/include/vala-1.0/vala/valaarraylengthfield.h
-  /usr/include/vala-1.0/vala/valaarraymovemethod.h
-  /usr/include/vala-1.0/vala/valaarrayresizemethod.h
-  /usr/include/vala-1.0/vala/valaarraytype.h
-  /usr/include/vala-1.0/vala/valaassignment.h
-  /usr/include/vala-1.0/vala/valaattribute.h
-  /usr/include/vala-1.0/vala/valabaseaccess.h
-  /usr/include/vala-1.0/vala/valabasicblock.h
-  /usr/include/vala-1.0/vala/valabinaryexpression.h
-  /usr/include/vala-1.0/vala/valablock.h
-  /usr/include/vala-1.0/vala/valabooleanliteral.h
-  /usr/include/vala-1.0/vala/valabreakstatement.h
-  /usr/include/vala-1.0/vala/valacastexpression.h
-  /usr/include/vala-1.0/vala/valacatchclause.h
-  /usr/include/vala-1.0/vala/valacfgbuilder.h
-  /usr/include/vala-1.0/vala/valacharacterliteral.h
-  /usr/include/vala-1.0/vala/valaclass.h
-  /usr/include/vala-1.0/vala/valaclasstype.h
-  /usr/include/vala-1.0/vala/valacodecontext.h
-  /usr/include/vala-1.0/vala/valacodegenerator.h
-  /usr/include/vala-1.0/vala/valacodenode.h
-  /usr/include/vala-1.0/vala/valacodevisitor.h
-  /usr/include/vala-1.0/vala/valaconditionalexpression.h
-  /usr/include/vala-1.0/vala/valaconstant.h
-  /usr/include/vala-1.0/vala/valaconstructor.h
-  /usr/include/vala-1.0/vala/valacontinuestatement.h
-  /usr/include/vala-1.0/vala/valacreationmethod.h
-  /usr/include/vala-1.0/vala/valadatatype.h
-  /usr/include/vala-1.0/vala/valadeclarationstatement.h
-  /usr/include/vala-1.0/vala/valadelegate.h
-  /usr/include/vala-1.0/vala/valadelegatetype.h
-  /usr/include/vala-1.0/vala/valadeletestatement.h
-  /usr/include/vala-1.0/vala/valadestructor.h
-  /usr/include/vala-1.0/vala/valadostatement.h
-  /usr/include/vala-1.0/vala/valadynamicmethod.h
-  /usr/include/vala-1.0/vala/valadynamicproperty.h
-  /usr/include/vala-1.0/vala/valadynamicsignal.h
-  /usr/include/vala-1.0/vala/valaelementaccess.h
-  /usr/include/vala-1.0/vala/valaemptystatement.h
-  /usr/include/vala-1.0/vala/valaenum.h
-  /usr/include/vala-1.0/vala/valaenumvalue.h
-  /usr/include/vala-1.0/vala/valaerrorcode.h
-  /usr/include/vala-1.0/vala/valaerrordomain.h
-  /usr/include/vala-1.0/vala/valaerrortype.h
-  /usr/include/vala-1.0/vala/valaexpression.h
-  /usr/include/vala-1.0/vala/valaexpressionstatement.h
-  /usr/include/vala-1.0/vala/valafield.h
-  /usr/include/vala-1.0/vala/valafieldprototype.h
-  /usr/include/vala-1.0/vala/valaforeachstatement.h
-  /usr/include/vala-1.0/vala/valaformalparameter.h
-  /usr/include/vala-1.0/vala/valaforstatement.h
-  /usr/include/vala-1.0/vala/valagenieparser.h
-  /usr/include/vala-1.0/vala/valageniescanner.h
-  /usr/include/vala-1.0/vala/valagenietokentype.h
-  /usr/include/vala-1.0/vala/valaifstatement.h
-  /usr/include/vala-1.0/vala/valainitializerlist.h
-  /usr/include/vala-1.0/vala/valainstancecast.h
-  /usr/include/vala-1.0/vala/valaintegerliteral.h
-  /usr/include/vala-1.0/vala/valaintegertype.h
-  /usr/include/vala-1.0/vala/valainterface.h
-  /usr/include/vala-1.0/vala/valainterfacetype.h
-  /usr/include/vala-1.0/vala/valainterfacewriter.h
-  /usr/include/vala-1.0/vala/valainvalidtype.h
-  /usr/include/vala-1.0/vala/valainvocationexpression.h
-  /usr/include/vala-1.0/vala/valalambdaexpression.h
-  /usr/include/vala-1.0/vala/valaliteral.h
-  /usr/include/vala-1.0/vala/valalocalvariable.h
-  /usr/include/vala-1.0/vala/valalockable.h
-  /usr/include/vala-1.0/vala/valalockstatement.h
-  /usr/include/vala-1.0/vala/valamember.h
-  /usr/include/vala-1.0/vala/valamemberaccess.h
-  /usr/include/vala-1.0/vala/valamemberinitializer.h
-  /usr/include/vala-1.0/vala/valamethod.h
-  /usr/include/vala-1.0/vala/valamethodtype.h
-  /usr/include/vala-1.0/vala/valanamespace.h
-  /usr/include/vala-1.0/vala/valanullchecker.h
-  /usr/include/vala-1.0/vala/valanullliteral.h
-  /usr/include/vala-1.0/vala/valanulltype.h
-  /usr/include/vala-1.0/vala/valaobjectcreationexpression.h
-  /usr/include/vala-1.0/vala/valaobjecttype.h
-  /usr/include/vala-1.0/vala/valaobjecttypesymbol.h
-  /usr/include/vala-1.0/vala/valaparenthesizedexpression.h
-  /usr/include/vala-1.0/vala/valaparser.h
-  /usr/include/vala-1.0/vala/valapointerindirection.h
-  /usr/include/vala-1.0/vala/valapointertype.h
-  /usr/include/vala-1.0/vala/valapostfixexpression.h
-  /usr/include/vala-1.0/vala/valaproperty.h
-  /usr/include/vala-1.0/vala/valapropertyaccessor.h
-  /usr/include/vala-1.0/vala/valarealliteral.h
-  /usr/include/vala-1.0/vala/valareferencetransferexpression.h
-  /usr/include/vala-1.0/vala/valareferencetype.h
-  /usr/include/vala-1.0/vala/valareport.h
-  /usr/include/vala-1.0/vala/valareturnstatement.h
-  /usr/include/vala-1.0/vala/valascanner.h
-  /usr/include/vala-1.0/vala/valascope.h
-  /usr/include/vala-1.0/vala/valasemanticanalyzer.h
-  /usr/include/vala-1.0/vala/valasignal.h
-  /usr/include/vala-1.0/vala/valasignaltype.h
-  /usr/include/vala-1.0/vala/valasizeofexpression.h
-  /usr/include/vala-1.0/vala/valasourcefile.h
-  /usr/include/vala-1.0/vala/valasourcefilecycle.h
-  /usr/include/vala-1.0/vala/valasourcelocation.h
-  /usr/include/vala-1.0/vala/valasourcereference.h
-  /usr/include/vala-1.0/vala/valastatement.h
-  /usr/include/vala-1.0/vala/valastringliteral.h
-  /usr/include/vala-1.0/vala/valastruct.h
-  /usr/include/vala-1.0/vala/valaswitchlabel.h
-  /usr/include/vala-1.0/vala/valaswitchsection.h
-  /usr/include/vala-1.0/vala/valaswitchstatement.h
-  /usr/include/vala-1.0/vala/valasymbol.h
-  /usr/include/vala-1.0/vala/valasymbolresolver.h
-  /usr/include/vala-1.0/vala/valathrowstatement.h
-  /usr/include/vala-1.0/vala/valatokentype.h
-  /usr/include/vala-1.0/vala/valatrystatement.h
-  /usr/include/vala-1.0/vala/valatuple.h
-  /usr/include/vala-1.0/vala/valatypecheck.h
-  /usr/include/vala-1.0/vala/valatypeofexpression.h
-  /usr/include/vala-1.0/vala/valatypeparameter.h
-  /usr/include/vala-1.0/vala/valatypeparametertype.h
-  /usr/include/vala-1.0/vala/valatypesymbol.h
-  /usr/include/vala-1.0/vala/valaunaryexpression.h
-  /usr/include/vala-1.0/vala/valaunresolvedsymbol.h
-  /usr/include/vala-1.0/vala/valaunresolvedtype.h
-  /usr/include/vala-1.0/vala/valausingdirective.h
-  /usr/include/vala-1.0/vala/valavaluetype.h
-  /usr/include/vala-1.0/vala/valavoidtype.h
-  /usr/include/vala-1.0/vala/valawhilestatement.h
-  /usr/include/vala-1.0/vala/valayieldstatement.h
+  /usr/include/vala-1.0/gee.h
+  /usr/include/vala-1.0/vala.h
+  /usr/include/vala-1.0/valaccode.h
+  /usr/include/vala-1.0/valacodegen.h
   /usr/lib/libvala.dll.a
   /usr/lib/libvala.la
   /usr/lib/pkgconfig/vala-1.0.pc
@@ -324,6 +111,8 @@ Files included in the binary packages:
 
   /usr/share/vala/vapi/bzlib.vapi
 
+  /usr/share/vala/vapi/cairo-xcb.deps
+  /usr/share/vala/vapi/cairo-xcb.vapi
   /usr/share/vala/vapi/cairo.vapi
 
   /usr/share/vala/vapi/curses.vapi
@@ -336,8 +125,6 @@ Files included in the binary packages:
 
   /usr/share/vala/vapi/gdk-pixbuf-2.0.deps
   /usr/share/vala/vapi/gdk-pixbuf-2.0.vapi
-
-  /usr/share/vala/vapi/gnet-2.0.vapi
 
   /usr/share/vala/vapi/gnome-desktop-2.0.deps
   /usr/share/vala/vapi/gnome-desktop-2.0.vapi
@@ -424,9 +211,6 @@ Files included in the binary packages:
   /usr/share/vala/vapi/librsvg-2.0.deps
   /usr/share/vala/vapi/librsvg-2.0.vapi
 
-  /usr/share/vala/vapi/libsexy.deps
-  /usr/share/vala/vapi/libsexy.vapi
-
   /usr/share/vala/vapi/libsoup-2.2.vapi
 
   /usr/share/vala/vapi/libsoup-2.4.deps
@@ -479,11 +263,18 @@ Files included in the binary packages:
   /usr/share/vala/vapi/webkit-1.0.deps
   /usr/share/vala/vapi/webkit-1.0.vapi
 
+  /usr/share/vala/vapi/x11.vapi
+
+  /usr/share/vala/vapi/xcb.vapi
+
   /usr/share/vala/vapi/zlib.vapi
 
 ------------------
 
 Port Notes:
+
+----- version 0.7.3-1 -----
+Version bump.
 
 ----- version 0.6.0-1 -----
 Initial release for Cygwin 1.7.

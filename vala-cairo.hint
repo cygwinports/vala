@@ -1,5 +1,5 @@
 category: Devel X11
-requires: vala libcairo-devel
+requires: vala libcairo-devel vala-xcb
 external-source: vala
 sdesc: "Vala cairo bindings"
 ldesc: "Vala is a new programming language that aims to bring modern 
