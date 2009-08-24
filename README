@@ -6,7 +6,7 @@ runtime requirements and without using a different ABI compared to
 applications and libraries written in C.
 
 Runtime requirements:
-  cygwin-1.7.0-50
+  cygwin-1.7.0-60
   gcc4-core
   libglib2.0_0-2.20.4-1
   pkg-config
@@ -15,14 +15,14 @@ Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
   automake1.10-1.10.2-10
-  binutils-20080624-2
+  binutils-2.19.51-1
   bison-2.3-1
-  cygport-0.9.7-1
+  cygport-0.9.9-1
   flex-2.5.35-1
   gawk-3.1.6-2
   gcc4-core-4.3.2-2
   gnome-common-2.26.0-2
-  libtool-2.2.7a-13
+  libtool-2.2.7a-14
   make-3.81-2
   pkg-config-0.23b-10
   sed-4.1.5-2
@@ -36,244 +36,26 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack vala-0.7.4-X-src.tar.bz2
+  unpack vala-0.7.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./vala-0.7.4-X.cygport all
+  cygport ./vala-0.7.5-X.cygport all
 
 This will create:
-  /usr/src/libvala-devel-0.7.4-X.tar.bz2
-  /usr/src/libvala0-0.7.4-X.tar.bz2
-  /usr/src/vala-0.7.4-X-src.tar.bz2
-  /usr/src/vala-0.7.4-X.tar.bz2
-  /usr/src/vala-*-0.7.4-X.tar.bz2
+  /usr/src/libvala-devel-0.7.5-X.tar.bz2
+  /usr/src/libvala0-0.7.5-X.tar.bz2
+  /usr/src/vala-0.7.5-X-src.tar.bz2
+  /usr/src/vala-0.7.5-X.tar.bz2
+  /usr/src/vala-*-0.7.5-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary packages:
-
-(vala)
-  /usr/bin/vala-gen-introspect
-  /usr/bin/valac.exe
-  /usr/bin/vapicheck.exe
-  /usr/bin/vapigen.exe
-  /usr/lib/vala/gen-introspect.exe
-  /usr/share/devhelp/books/vala/attributes.html
-  /usr/share/devhelp/books/vala/classes.html
-  /usr/share/devhelp/books/vala/default.css
-  /usr/share/devhelp/books/vala/delegates.html
-  /usr/share/devhelp/books/vala/enums.html
-  /usr/share/devhelp/books/vala/exceptions.html
-  /usr/share/devhelp/books/vala/expressions.html
-  /usr/share/devhelp/books/vala/index.html
-  /usr/share/devhelp/books/vala/interfaces.html
-  /usr/share/devhelp/books/vala/methods.html
-  /usr/share/devhelp/books/vala/namespaces.html
-  /usr/share/devhelp/books/vala/overview.html
-  /usr/share/devhelp/books/vala/statements.html
-  /usr/share/devhelp/books/vala/structs.html
-  /usr/share/devhelp/books/vala/types.html
-  /usr/share/devhelp/books/vala/vala.devhelp2
-  /usr/share/doc/vala/AUTHORS
-  /usr/share/doc/vala/COPYING
-  /usr/share/doc/vala/ChangeLog
-  /usr/share/doc/vala/MAINTAINERS
-  /usr/share/doc/vala/NEWS
-  /usr/share/doc/vala/README
-  /usr/share/doc/vala/THANKS
-  /usr/share/man/man1/vala-gen-introspect.1.gz
-  /usr/share/man/man1/valac.1.gz
-  /usr/share/man/man1/vapigen.1.gz
-  /usr/share/vala/vapi/gio-2.0.vapi
-  /usr/share/vala/vapi/gio-unix-2.0.deps
-  /usr/share/vala/vapi/gio-unix-2.0.vapi
-  /usr/share/vala/vapi/glib-2.0.vapi
-  /usr/share/vala/vapi/gmodule-2.0.vapi
-  /usr/share/vala/vapi/gobject-2.0.vapi
-  /usr/share/vala/vapi/posix.vapi
-
-(libvala0)
-  /usr/bin/cygvala-0.dll
-
-(libvala-devel)
-  /usr/include/vala-1.0/gee.h
-  /usr/include/vala-1.0/vala.h
-  /usr/include/vala-1.0/valaccode.h
-  /usr/include/vala-1.0/valacodegen.h
-  /usr/lib/libvala.dll.a
-  /usr/lib/libvala.la
-  /usr/lib/pkgconfig/vala-1.0.pc
-  /usr/share/vala/vapi/vala-1.0.vapi
-
-(vala-*)
-  /usr/share/vala/vapi/atk.vapi
-
-  /usr/share/vala/vapi/bzlib.vapi
-
-  /usr/share/vala/vapi/cairo-xcb.deps
-  /usr/share/vala/vapi/cairo-xcb.vapi
-  /usr/share/vala/vapi/cairo.vapi
-
-  /usr/share/vala/vapi/curses.vapi
-
-  /usr/share/vala/vapi/dbus-glib-1.vapi
-
-  /usr/share/vala/vapi/enchant.vapi
-
-  /usr/share/vala/vapi/gconf-2.0.vapi
-
-  /usr/share/vala/vapi/gdk-pixbuf-2.0.deps
-  /usr/share/vala/vapi/gdk-pixbuf-2.0.vapi
-
-  /usr/share/vala/vapi/gnome-desktop-2.0.deps
-  /usr/share/vala/vapi/gnome-desktop-2.0.vapi
-
-  /usr/share/vala/vapi/gnome-keyring-1.vapi
-
-  /usr/share/vala/vapi/gnome-vfs-2.0.vapi
-
-  /usr/share/vala/vapi/goocanvas.deps
-  /usr/share/vala/vapi/goocanvas.vapi
-
-  /usr/share/vala/vapi/gsl.vapi
-
-  /usr/share/vala/vapi/gstreamer-0.10.deps
-  /usr/share/vala/vapi/gstreamer-0.10.vapi
-  /usr/share/vala/vapi/gstreamer-audio-0.10.deps
-  /usr/share/vala/vapi/gstreamer-audio-0.10.vapi
-  /usr/share/vala/vapi/gstreamer-base-0.10.deps
-  /usr/share/vala/vapi/gstreamer-base-0.10.vapi
-  /usr/share/vala/vapi/gstreamer-check-0.10.deps
-  /usr/share/vala/vapi/gstreamer-check-0.10.vapi
-  /usr/share/vala/vapi/gstreamer-controller-0.10.deps
-  /usr/share/vala/vapi/gstreamer-controller-0.10.vapi
-  /usr/share/vala/vapi/gstreamer-dataprotocol-0.10.deps
-  /usr/share/vala/vapi/gstreamer-dataprotocol-0.10.vapi
-  /usr/share/vala/vapi/gstreamer-fft-0.10.deps
-  /usr/share/vala/vapi/gstreamer-fft-0.10.vapi
-  /usr/share/vala/vapi/gstreamer-interfaces-0.10.deps
-  /usr/share/vala/vapi/gstreamer-interfaces-0.10.vapi
-  /usr/share/vala/vapi/gstreamer-net-0.10.deps
-  /usr/share/vala/vapi/gstreamer-net-0.10.vapi
-  /usr/share/vala/vapi/gstreamer-netbuffer-0.10.deps
-  /usr/share/vala/vapi/gstreamer-netbuffer-0.10.vapi
-  /usr/share/vala/vapi/gstreamer-pbutils-0.10.deps
-  /usr/share/vala/vapi/gstreamer-pbutils-0.10.vapi
-  /usr/share/vala/vapi/gstreamer-riff-0.10.deps
-  /usr/share/vala/vapi/gstreamer-riff-0.10.vapi
-  /usr/share/vala/vapi/gstreamer-rtp-0.10.deps
-  /usr/share/vala/vapi/gstreamer-rtp-0.10.vapi
-  /usr/share/vala/vapi/gstreamer-rtsp-0.10.deps
-  /usr/share/vala/vapi/gstreamer-rtsp-0.10.vapi
-  /usr/share/vala/vapi/gstreamer-sdp-0.10.deps
-  /usr/share/vala/vapi/gstreamer-sdp-0.10.vapi
-  /usr/share/vala/vapi/gstreamer-tag-0.10.deps
-  /usr/share/vala/vapi/gstreamer-tag-0.10.vapi
-  /usr/share/vala/vapi/gstreamer-video-0.10.deps
-  /usr/share/vala/vapi/gstreamer-video-0.10.vapi
-
-  /usr/share/vala/vapi/gdk-2.0.deps
-  /usr/share/vala/vapi/gdk-2.0.vapi
-  /usr/share/vala/vapi/gdk-x11-2.0.deps
-  /usr/share/vala/vapi/gdk-x11-2.0.vapi
-  /usr/share/vala/vapi/gtk+-2.0.deps
-  /usr/share/vala/vapi/gtk+-2.0.vapi
-
-  /usr/share/vala/vapi/gtksourceview-2.0.deps
-  /usr/share/vala/vapi/gtksourceview-2.0.vapi
-
-  /usr/share/vala/vapi/json-glib-1.0.vapi
-
-  /usr/share/vala/vapi/libbonoboui-2.0.vapi
-
-  /usr/share/vala/vapi/libdaemon.vapi
-
-  /usr/share/vala/vapi/libglade-2.0.deps
-  /usr/share/vala/vapi/libglade-2.0.vapi
-
-  /usr/share/vala/vapi/libgnome-2.0.vapi
-
-  /usr/share/vala/vapi/libgnome-menu.vapi
-
-  /usr/share/vala/vapi/libgnomeui-2.0.deps
-  /usr/share/vala/vapi/libgnomeui-2.0.vapi
-
-  /usr/share/vala/vapi/libgsf-1.deps
-  /usr/share/vala/vapi/libgsf-1.vapi
-
-  /usr/share/vala/vapi/libnotify.deps
-  /usr/share/vala/vapi/libnotify.vapi
-
-  /usr/share/vala/vapi/libpanelapplet-2.0.deps
-  /usr/share/vala/vapi/libpanelapplet-2.0.vapi
-
-  /usr/share/vala/vapi/libpq.vapi
-
-  /usr/share/vala/vapi/librsvg-2.0.deps
-  /usr/share/vala/vapi/librsvg-2.0.vapi
-
-  /usr/share/vala/vapi/libsoup-2.2.vapi
-
-  /usr/share/vala/vapi/libsoup-2.4.deps
-  /usr/share/vala/vapi/libsoup-2.4.vapi
-
-  /usr/share/vala/vapi/libusb.vapi
-
-  /usr/share/vala/vapi/libwnck-1.0.deps
-  /usr/share/vala/vapi/libwnck-1.0.vapi
-
-  /usr/share/vala/vapi/libxml-2.0.vapi
-
-  /usr/share/vala/vapi/loudmouth-1.0.vapi
-
-  /usr/share/vala/vapi/lua.vapi
-
-  /usr/share/vala/vapi/mysql.vapi
-
-  /usr/share/vala/vapi/pango.deps
-  /usr/share/vala/vapi/pango.vapi
-  /usr/share/vala/vapi/pangocairo.deps
-  /usr/share/vala/vapi/pangocairo.vapi
-
-  /usr/share/vala/vapi/poppler-glib.deps
-  /usr/share/vala/vapi/poppler-glib.vapi
-
-  /usr/share/vala/vapi/raptor.vapi
-
-  /usr/share/vala/vapi/rasqal.vapi
-
-  /usr/share/vala/vapi/sdl-gfx.vapi
-  /usr/share/vala/vapi/sdl-image.vapi
-  /usr/share/vala/vapi/sdl-mixer.vapi
-  /usr/share/vala/vapi/sdl-net.vapi
-  /usr/share/vala/vapi/sdl-ttf.vapi
-  /usr/share/vala/vapi/sdl.vapi
-
-  /usr/share/vala/vapi/sqlite3.vapi
-
-  /usr/share/vala/vapi/taglib_c.vapi
-
-  /usr/share/vala/vapi/tiff.vapi
-
-  /usr/share/vala/vapi/unique-1.0.deps
-  /usr/share/vala/vapi/unique-1.0.vapi
-
-  /usr/share/vala/vapi/vte.deps
-  /usr/share/vala/vapi/vte.vapi
-
-  /usr/share/vala/vapi/webkit-1.0.deps
-  /usr/share/vala/vapi/webkit-1.0.vapi
-
-  /usr/share/vala/vapi/x11.vapi
-
-  /usr/share/vala/vapi/xcb.vapi
-
-  /usr/share/vala/vapi/zlib.vapi
-
-------------------
-
 Port Notes:
+
+----- version 0.7.5-1 -----
+Version bump.
+New bindings: libgdata.
 
 ----- version 0.7.4-1 -----
 Version bump.

@@ -1,7 +1,7 @@
 category: Devel
-requires: vala zlib-devel
+requires: vala libgnet2.0-devel
 external-source: vala
-sdesc: "Vala zlib bindings"
+sdesc: "Vala gnet-2.0 bindings"
 ldesc: "Vala is a new programming language that aims to bring modern 
 programming language features to GNOME developers without imposing any 
 additional runtime requirements and without using a different ABI 
