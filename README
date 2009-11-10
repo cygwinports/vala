@@ -36,24 +36,24 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack vala-0.7.7-X-src.tar.bz2
+  unpack vala-0.7.8-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./vala-0.7.7-X.cygport all
+  cygport ./vala-0.7.8-X.cygport all
 
 This will create:
-  /usr/src/libvala-devel-0.7.7-X.tar.bz2
-  /usr/src/libvala0-0.7.7-X.tar.bz2
-  /usr/src/vala-0.7.7-X-src.tar.bz2
-  /usr/src/vala-0.7.7-X.tar.bz2
-  /usr/src/vala-*-0.7.7-X.tar.bz2
+  /usr/src/libvala-devel-0.7.8-X.tar.bz2
+  /usr/src/libvala0-0.7.8-X.tar.bz2
+  /usr/src/vala-0.7.8-X-src.tar.bz2
+  /usr/src/vala-0.7.8-X.tar.bz2
+  /usr/src/vala-*-0.7.8-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
 
------ version 0.7.7-1 -----
+----- version 0.7.8-1 -----
 Version bump.
 New bindings: libgda-4.0.
 
