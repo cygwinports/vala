@@ -1,7 +1,7 @@
-category: Devel Gnome
-requires: vala libgstinterfaces0.10-devel libgstreamer0.10-devel
+category: Devel
+requires: vala file
 external-source: vala
-sdesc: "Vala GStreamer 0.10 bindings"
+sdesc: "Vala libmagic bindings"
 ldesc: "Vala is a new programming language that aims to bring modern 
 programming language features to GNOME developers without imposing any 
 additional runtime requirements and without using a different ABI 

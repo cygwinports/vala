@@ -38,14 +38,14 @@ vala_sdl_CONTENTS="${vapidir}/sdl*.*"
 vala_CONTENTS+=" --exclude=sdl*.*"
 
 for vapi in atk bzlib curses dbus-glib-1 enchant gconf-2.0 \
-            gdk-pixbuf-2.0 gl-1.0 gnet-2.0 gnome-desktop-2.0 gnome-keyring-1 \
+            gdk-pixbuf-2.0 gnet-2.0 gnome-desktop-2.0 gnome-keyring-1 \
             gnome-vfs-2.0 gnutls goocanvas gsl gtksourceview-2.0 json-glib-1.0 \
-            libbonoboui-2.0 libdaemon libgda-4.0 libgdata libglade-2.0 \
-            libgnome-2.0 libgnome-menu libgnomeui-2.0 libgsf-1 libnotify \
+            libarchive libbonoboui-2.0 libdaemon libgda-4.0 libgdata libglade-2.0 \
+            libgnome-2.0 libgnome-menu libgnomeui-2.0 libgsf-1 libmagic libnotify \
             libpanelapplet-2.0 libpq librsvg-2.0 libsoup-2.4 libusb \
             libwnck-1.0 libxml-2.0 loudmouth-1.0 lua mysql poppler-glib \
-            raptor rasqal rest sqlite3 taglib_c tiff unique-1.0 vte \
-            webkit-1.0 x11 xcb zlib
+            raptor rasqal readline rest sqlite3 taglib_c tiff twitter-glib-1.0 \
+            unique-1.0 vte webkit-1.0 x11 xcb zlib
 do
 	vapi_pkg=$(echo ${vapi} | sed -e 's/\-\([0-9]\)/\1/')
 	PKG_NAMES+=" vala-${vapi_pkg}"
@@ -53,9 +53,9 @@ do
 	vala_CONTENTS+=" --exclude=${vapi}.*"
 done
 
-for vapi in alsa dconf fuse gtkmozembed hal hildon-1 hildon-fm-2 libepc-1.0 \
-            libftdi libnl-1 liboobs-1 libosso libsexy libsoup-2.2 libusb-1.0 \
-            linux tracker-indexer-module-1.0 v4l2
+for vapi in alsa avahi-gobject ccss-1 dconf fuse gtkmozembed hal hildon-1 hildon-fm-2 \
+            libepc-1.0 libftdi libnl-1 libnl-2.0 liboobs-1 libosso libsexy libsoup-2.2 \
+            libusb-1.0 linux tracker-indexer-module-1.0 v4l2
 do
 	PKG_IGNORE+=" ${vapidir}/${vapi}.*"
 	vala_CONTENTS+=" --exclude=${vapi}.*"

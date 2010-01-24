@@ -6,23 +6,23 @@ runtime requirements and without using a different ABI compared to
 applications and libraries written in C.
 
 Runtime requirements:
-  cygwin-1.7.0-62
+  cygwin-1.7.1-1
   gcc4-core
-  libglib2.0_0-2.22.2-1
+  libglib2.0_0-2.22.4-1
   pkg-config
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-10
-  automake1.10-1.10.2-10
+  autoconf2.5-2.65-1
+  automake1.10-1.10.3-1
   binutils-2.19.51-1
   bison-2.3-1
-  cygport-0.9.10-1
+  cygport-0.9.80-1
   flex-2.5.35-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.4-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-3
   gnome-common-2.28.0-1
-  libtool-2.2.7a-14
+  libtool-2.2.7a-15
   make-3.81-2
   pkg-config-0.23b-10
   sed-4.1.5-2
@@ -36,22 +36,26 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack vala-0.7.8-X-src.tar.bz2
+  unpack vala-0.7.9-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./vala-0.7.8-X.cygport all
+  cygport ./vala-0.7.9-X.cygport all
 
 This will create:
-  /usr/src/libvala-devel-0.7.8-X.tar.bz2
-  /usr/src/libvala0-0.7.8-X.tar.bz2
-  /usr/src/vala-0.7.8-X-src.tar.bz2
-  /usr/src/vala-0.7.8-X.tar.bz2
-  /usr/src/vala-*-0.7.8-X.tar.bz2
+  /usr/src/libvala-devel-0.7.9-X.tar.bz2
+  /usr/src/libvala0-0.7.9-X.tar.bz2
+  /usr/src/vala-0.7.9-X-src.tar.bz2
+  /usr/src/vala-0.7.9-X.tar.bz2
+  /usr/src/vala-*-0.7.9-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
+
+----- version 0.7.9-1 -----
+Version bump.
+New bindings: libarchive, libmagic, readline, twitter-glib-1.0.
 
 ----- version 0.7.8-1 -----
 Version bump.
