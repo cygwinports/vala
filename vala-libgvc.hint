@@ -1,7 +1,7 @@
-category: Devel X11
-requires: vala vala-cairo vala-pango libclutter1.0-devel
+category: Devel
+requires: vala libgvc-devel
 external-source: vala
-sdesc: "Vala Clutter bindings"
+sdesc: "Vala GraphViz bindings"
 ldesc: "Vala is a new programming language that aims to bring modern 
 programming language features to GNOME developers without imposing any 
 additional runtime requirements and without using a different ABI 

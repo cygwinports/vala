@@ -18,7 +18,7 @@ vala_cairo_CONTENTS="${vapidir}/cairo*.*"
 vala_CONTENTS+=" --exclude=cairo*.*"
 
 PKG_NAMES+=" vala-clutter1.0"
-vala_clutter1_0_CONTENTS="${vapidir}/clutter*-1.0.* ${vapidir}/cogl-1.0.*"
+vala_clutter1_0_CONTENTS="${vapidir}/clutter-1.0.* ${vapidir}/clutter-json-1.0.* ${vapidir}/cogl-1.0.*"
 vala_CONTENTS+=" --exclude=clutter*-1.0.* --exclude=cogl-1.0.*"
 
 PKG_NAMES+=" vala-gtk2.0"
@@ -29,6 +29,10 @@ PKG_NAMES+=" vala-gstreamer0.10"
 vala_gstreamer0_10_CONTENTS="${vapidir}/gstreamer*-0.10.*"
 vala_CONTENTS+=" --exclude=gstreamer*-0.10.*"
 
+PKG_NAMES+=" vala-libgda4.0"
+vala_libgda4_0_CONTENTS="${vapidir}/libgda*-4.0.*"
+vala_CONTENTS+=" --exclude=libgda*-4.0.*"
+
 PKG_NAMES+=" vala-pango"
 vala_pango_CONTENTS="${vapidir}/pango*.*"
 vala_CONTENTS+=" --exclude=pango*.*"
@@ -37,14 +41,15 @@ PKG_NAMES+=" vala-sdl"
 vala_sdl_CONTENTS="${vapidir}/sdl*.*"
 vala_CONTENTS+=" --exclude=sdl*.*"
 
-for vapi in atk bzlib curses dbus-glib-1 enchant gconf-2.0 \
-            gdk-pixbuf-2.0 gnet-2.0 gnome-desktop-2.0 gnome-keyring-1 \
+for vapi in atk bzlib clutter-gst-1.0 clutter-gtk-0.10 curses dbus-glib-1 enchant gconf-2.0 \
+            gdk-pixbuf-2.0 gdl-1.0 gnet-2.0 gnome-desktop-2.0 gnome-keyring-1 \
             gnome-vfs-2.0 gnutls goocanvas gsl gtksourceview-2.0 json-glib-1.0 \
-            libarchive libbonoboui-2.0 libdaemon libgda-4.0 libgdata libglade-2.0 \
-            libgnome-2.0 libgnome-menu libgnomeui-2.0 libgsf-1 libmagic libnotify \
-            libpanelapplet-2.0 libpq librsvg-2.0 libsoup-2.4 libusb \
+            libarchive libbonoboui-2.0 libdaemon libgdata libglade-2.0 \
+            libgnome-2.0 libgnome-menu libgnomeui-2.0 libgsf-1 libgvc \
+            libmagic libnotify libpanelapplet-2.0 libpq librsvg-2.0 \
+            libsoup-2.4 libusb libusb-1.0 \
             libwnck-1.0 libxml-2.0 loudmouth-1.0 lua mysql poppler-glib \
-            raptor rasqal readline rest sqlite3 taglib_c tiff twitter-glib-1.0 \
+            raptor rasqal readline rest purple sqlite3 taglib_c tiff twitter-glib-1.0 \
             unique-1.0 vte webkit-1.0 x11 xcb zlib
 do
 	vapi_pkg=$(echo ${vapi} | sed -e 's/\-\([0-9]\)/\1/')
@@ -53,9 +58,10 @@ do
 	vala_CONTENTS+=" --exclude=${vapi}.*"
 done
 
-for vapi in alsa avahi-gobject ccss-1 dconf fuse gtkmozembed hal hildon-1 hildon-fm-2 \
+for vapi in alsa avahi-gobject ccss-1 dconf fuse gdu gdu-gtk gtkmozembed \
+            gudev-1.0 hal hildon-1 hildon-fm-2 \
             libepc-1.0 libftdi libnl-1 libnl-2.0 liboobs-1 libosso libsexy libsoup-2.2 \
-            libusb-1.0 linux tracker-indexer-module-1.0 v4l2
+            linux tracker-indexer-module-1.0 v4l2
 do
 	PKG_IGNORE+=" ${vapidir}/${vapi}.*"
 	vala_CONTENTS+=" --exclude=${vapi}.*"

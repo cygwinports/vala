@@ -1,7 +1,7 @@
-category: Devel X11
-requires: vala libGL-devel
+category: Devel Gnome
+requires: vala libgdl1-devel vala-gtk2.0
 external-source: vala
-sdesc: "Vala OpenGL bindings"
+sdesc: "Vala GDL bindings"
 ldesc: "Vala is a new programming language that aims to bring modern 
 programming language features to GNOME developers without imposing any 
 additional runtime requirements and without using a different ABI 

@@ -1,7 +1,7 @@
-category: Devel Gnome
+category: Devel
 requires: vala libusb-win32
 external-source: vala
-sdesc: "Vala libusb bindings"
+sdesc: "Vala libusb-0.1 bindings"
 ldesc: "Vala is a new programming language that aims to bring modern 
 programming language features to GNOME developers without imposing any 
 additional runtime requirements and without using a different ABI 
