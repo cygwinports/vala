@@ -1,5 +1,5 @@
 category: Devel
-requires: vala libusb-win32
+requires: vala libusb0.1-devel
 external-source: vala
 sdesc: "Vala libusb-0.1 bindings"
 ldesc: "Vala is a new programming language that aims to bring modern 
