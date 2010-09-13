@@ -1,6 +1,7 @@
-category: Devel Gnome Interpreters
-requires: libglib2.0_0 libglib2.0-devel libvala0.10_0 pkg-config gcc4-core
-sdesc: "Compiler for the GObject type system"
+category: Devel Gnome
+requires: vala vala-atk vala-cairo vala-gtk2.0 vala-gtksourceview2.0 vala-pango gedit-devel
+external-source: vala
+sdesc: "Vala GEdit bindings"
 ldesc: "Vala is a new programming language that aims to bring modern 
 programming language features to GNOME developers without imposing any 
 additional runtime requirements and without using a different ABI 
