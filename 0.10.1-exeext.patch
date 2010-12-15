@@ -1,0 +1,20 @@
+--- origsrc/vala-0.10.1/compiler/Makefile.am	2010-09-10 02:35:01.000000000 -0500
++++ src/vala-0.10.1/compiler/Makefile.am	2010-12-14 21:15:19.322614800 -0600
+@@ -41,7 +41,7 @@ install-exec-hook:
+ 	cd $(DESTDIR)$(bindir) && $(LN_S) -f valac@PACKAGE_SUFFIX@$(EXEEXT) vala@PACKAGE_SUFFIX@$(EXEEXT)
+ if ENABLE_UNVERSIONED
+ 	cd $(DESTDIR)$(bindir) && $(LN_S) -f valac@PACKAGE_SUFFIX@$(EXEEXT) valac$(EXEEXT)
+-	cd $(DESTDIR)$(bindir) && $(LN_S) -f vala@PACKAGE_SUFFIX@$(EXEEXT) vala$(EXEEXT)
++	cd $(DESTDIR)$(bindir) && $(LN_S) -f valac@PACKAGE_SUFFIX@$(EXEEXT) vala$(EXEEXT)
+ endif
+ 
+ MAINTAINERCLEANFILES = \
+--- origsrc/vala-0.10.1/vapigen/vala-gen-introspect/Makefile.am	2010-09-10 02:35:02.000000000 -0500
++++ src/vala-0.10.1/vapigen/vala-gen-introspect/Makefile.am	2010-12-14 21:20:58.073368200 -0600
+@@ -10,5 +10,5 @@ EXTRA_DIST = \
+ 
+ if ENABLE_UNVERSIONED
+ install-exec-hook:
+-	cd $(DESTDIR)$(bindir) && $(LN_S) -f vala-gen-introspect@PACKAGE_SUFFIX@$(EXEEXT) vala-gen-introspect$(EXEEXT)
++	cd $(DESTDIR)$(bindir) && $(LN_S) -f vala-gen-introspect@PACKAGE_SUFFIX@ vala-gen-introspect
+ endif

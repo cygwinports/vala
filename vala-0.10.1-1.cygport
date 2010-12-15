@@ -3,8 +3,11 @@ inherit gnome2
 DESCRIPTION="Compiler for the GObject type system"
 HOMEPAGE="http://live.gnome.org/Vala"
 
-PATCH_URI="0.7.7-testrunner.patch
-           0.9.8-no-dirty-version.patch"
+PATCH_URI="
+	0.7.7-testrunner.patch
+	0.9.8-no-dirty-version.patch
+	0.10.1-exeext.patch
+"
 
 vapidir=usr/share/vala-0.10/vapi
 
@@ -68,7 +71,6 @@ do
 done
 
 for vapi in alsa avahi-gobject ccss-1 fuse gdu gdu-gtk gtkmozembed \
-            gdk-3.0 gdk-x11-3.0 gtk+-3.0 \
             gudev-1.0 hal hildon-1 hildon-fm-2 \
             libepc-1.0 libftdi libnl-1 libnl-2.0 liboobs-1 libosso libsexy libsoup-2.2 \
             linux mx-1.0 tokyocabinet tracker-indexer-module-1.0 v4l2
