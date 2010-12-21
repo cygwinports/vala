@@ -1,5 +1,5 @@
 category: Devel Gnome
-requires: vala vala-libsoup2.4 vala-libxml2.0 librest-devel
+requires: vala vala-libsoup2.4 vala-libxml2.0 librest0.6-devel
 external-source: vala
 sdesc: "Vala librest bindings"
 ldesc: "Vala is a new programming language that aims to bring modern 
