@@ -1,7 +1,7 @@
-category: Devel
-requires: vala gnutls-devel
+category: Gnome Interpreters
+requires: libglib2.0-devel libvala0.12_0
 external-source: vala
-sdesc: "Vala gnutls bindings"
+sdesc: "Vala parser library (development)"
 ldesc: "Vala is a new programming language that aims to bring modern 
 programming language features to GNOME developers without imposing any 
 additional runtime requirements and without using a different ABI 

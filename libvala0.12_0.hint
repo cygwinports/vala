@@ -1,7 +1,7 @@
-category: Devel Gnome
-requires: vala libgtksourceview2.0-devel vala-atk vala-cairo vala-gdk-pixbuf2.0 vala-gtk2.0 vala-pango
+category: Gnome Interpreters
+requires: libglib2.0_0
 external-source: vala
-sdesc: "Vala gtksourceview2.0 bindings"
+sdesc: "Vala parser library (runtime)"
 ldesc: "Vala is a new programming language that aims to bring modern 
 programming language features to GNOME developers without imposing any 
 additional runtime requirements and without using a different ABI 
