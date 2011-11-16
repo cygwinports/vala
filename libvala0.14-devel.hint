@@ -1,5 +1,5 @@
 category: Gnome Interpreters
-requires: libglib2.0-devel libvala0.12_0
+requires: libglib2.0-devel libvala0.14_0
 external-source: vala
 sdesc: "Vala parser library (development)"
 ldesc: "Vala is a new programming language that aims to bring modern 
