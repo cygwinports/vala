@@ -12,9 +12,9 @@ PATCH_URI="
 DEPEND="pkgconfig(glib-2.0)"
 
 PKG_NAMES="vala libvala0.14_0 libvala0.14-devel"
-libvala0_14_0_CONTENTS="usr/bin/cygvala-0.14-0.dll"
+libvala0_14_0_CONTENTS="usr/bin/cygvala-0.14-0.dll usr/lib/vala-0.14/ usr/share/vala-0.14/"
 libvala0_14_devel_CONTENTS="usr/include/ usr/lib/libvala* usr/lib/pkgconfig/"
-vala_CONTENTS="usr/bin/va* usr/lib/vala-0.14/ usr/share/"
+vala_CONTENTS="usr/bin/va* usr/share/aclocal/ usr/share/devhelp/ usr/share/doc/ usr/share/man/"
 
 DIFF_EXCLUDES="vala*.c"
 
