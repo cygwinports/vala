@@ -1,5 +1,5 @@
 category: Gnome Interpreters
-requires: libglib2.0_0
+requires: libglib2.0_0 libglib2.0-devel gcc4-core pkg-config
 external-source: vala
 sdesc: "Vala parser library (runtime)"
 ldesc: "Vala is a new programming language that aims to bring modern 
