@@ -19,3 +19,5 @@ vala_CONTENTS="--exclude=*-0.14* usr/bin/va* usr/share/aclocal/ usr/share/doc/ u
 DIFF_EXCLUDES="vala*.c"
 
 CYGCONF_ARGS="--enable-vapigen"
+
+KEEP_LA_FILES="none"
