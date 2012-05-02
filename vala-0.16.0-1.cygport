@@ -1,0 +1,25 @@
+inherit gnome2
+
+DESCRIPTION="Compiler for the GObject type system"
+HOMEPAGE="http://live.gnome.org/Vala"
+
+PATCH_URI="
+	0.7.7-testrunner.patch
+	0.9.8-no-dirty-version.patch
+	0.10.1-exeext.patch
+"
+
+DEPEND="pkgconfig(glib-2.0)"
+
+PKG_NAMES="vala libvala0.16_0 libvala0.16-devel"
+libvala0_16_0_CONTENTS="usr/bin/*-0.16* usr/lib/vala-0.16/ usr/share/man/man1/*-0.16.*
+                        usr/share/pkgconfig/*-0.16.pc usr/share/vala-0.16/"
+libvala0_16_devel_CONTENTS="usr/include/ usr/lib/libvala* usr/lib/pkgconfig/ usr/share/devhelp/"
+vala_CONTENTS="--exclude=*-0.16* usr/bin/va* usr/share/aclocal/ usr/share/doc/
+               usr/share/man/ usr/share/pkgconfig/ usr/share/vala/"
+
+DIFF_EXCLUDES="vala*.c"
+
+CYGCONF_ARGS="--enable-vapigen"
+
+KEEP_LA_FILES="none"
