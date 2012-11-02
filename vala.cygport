@@ -1,0 +1,35 @@
+inherit gnome2
+
+NAME="vala"
+VERSION=0.18.0
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="Compiler for the GObject type system"
+DESCRIPTION="Vala is a new programming language that aims to bring modern
+programming language features to GNOME developers without imposing any
+additional runtime requirements and without using a different ABI compared
+to applications and libraries written in C."
+HOMEPAGE="http://live.gnome.org/Vala"
+
+PATCH_URI="
+	0.7.7-testrunner.patch
+	0.9.8-no-dirty-version.patch
+	0.10.1-exeext.patch
+"
+
+DEPEND="pkgconfig(glib-2.0)"
+
+PKG_NAMES="vala libvala0.18_0 libvala0.18-devel"
+libvala0_18_0_REQUIRES="pkg-config"
+libvala0_18_0_CONTENTS="usr/bin/*-0.18* usr/lib/vala-0.18/ usr/share/man/man1/*-0.18.*
+                        usr/share/pkgconfig/*-0.18.pc usr/share/vala-0.18/"
+libvala0_18_devel_CONTENTS="usr/include/ usr/lib/libvala* usr/lib/pkgconfig/ usr/share/devhelp/"
+vala_REQUIRES="libvala0.18_0"
+vala_CONTENTS="--exclude=*-0.18* usr/bin/va* usr/share/aclocal/ usr/share/doc/
+               usr/share/man/ usr/share/pkgconfig/ usr/share/vala/"
+
+DIFF_EXCLUDES="vala*.c"
+
+CYGCONF_ARGS="--enable-vapigen"
+
+KEEP_LA_FILES="none"
