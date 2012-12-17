@@ -9,12 +9,3 @@
  endif
  
  MAINTAINERCLEANFILES = \
---- origsrc/vala-0.10.1/vapigen/vala-gen-introspect/Makefile.am	2010-09-10 02:35:02.000000000 -0500
-+++ src/vala-0.10.1/vapigen/vala-gen-introspect/Makefile.am	2010-12-14 21:20:58.073368200 -0600
-@@ -10,5 +10,5 @@ EXTRA_DIST = \
- 
- if ENABLE_UNVERSIONED
- install-exec-hook:
--	cd $(DESTDIR)$(bindir) && $(LN_S) -f vala-gen-introspect@PACKAGE_SUFFIX@$(EXEEXT) vala-gen-introspect$(EXEEXT)
-+	cd $(DESTDIR)$(bindir) && $(LN_S) -f vala-gen-introspect@PACKAGE_SUFFIX@ vala-gen-introspect
- endif

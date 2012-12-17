@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="vala"
-VERSION=0.18.0
+VERSION=0.18.1
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Compiler for the GObject type system"
@@ -31,5 +31,3 @@ vala_CONTENTS="--exclude=*-0.18* usr/bin/va* usr/share/aclocal/ usr/share/doc/
 DIFF_EXCLUDES="vala*.c"
 
 CYGCONF_ARGS="--enable-vapigen"
-
-KEEP_LA_FILES="none"
