@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="vala"
-VERSION=0.26.1
+VERSION=0.26.2
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Compiler for the GObject type system"
