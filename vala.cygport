@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="vala"
-VERSION=0.30.2
+VERSION=0.34.6
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Compiler for the GObject type system"
@@ -19,14 +19,36 @@ PATCH_URI="
 
 DEPEND="pkgconfig(glib-2.0)"
 
-PKG_NAMES="vala libvala0.30_0 libvala0.30-devel"
-libvala0_30_0_REQUIRES="pkg-config"
-libvala0_30_0_CONTENTS="usr/bin/*-0.30* usr/lib/vala-0.30/ usr/share/man/man1/*-0.30.*
-                        usr/share/pkgconfig/*-0.30.pc usr/share/vala-0.30/"
-libvala0_30_devel_CONTENTS="usr/include/ usr/lib/libvala* usr/lib/pkgconfig/ usr/share/devhelp/"
-vala_REQUIRES="libvala0.30_0"
-vala_CONTENTS="--exclude=*-0.30* usr/bin/va* usr/share/aclocal/ usr/share/doc/
-               usr/share/man/ usr/share/pkgconfig/ usr/share/vala/"
+PKG_NAMES="vala libvala0.34_0 libvala0.34-devel"
+libvala0_34_0_CONTENTS="
+	usr/bin/*-0.34*
+	usr/lib/pkgconfig/vapigen-0.34.pc
+	usr/lib/vala-0.34/
+	usr/share/man/man1/*-0.34.*
+	usr/share/vala-0.34/
+"
+libvala0_34_devel_CONTENTS="
+	usr/include/vala-0.34/
+	usr/lib/libvala-0.34.dll.a
+	usr/lib/pkgconfig/libvala-0.34.pc
+	usr/share/devhelp/books/vala-0.34/
+"
+vala_REQUIRES="libvala0.34_0"
+vala_CONTENTS="
+	usr/bin/vala
+	usr/bin/vala-gen-introspect
+	usr/bin/valac
+	usr/bin/vapicheck
+	usr/bin/vapigen
+	usr/lib/pkgconfig/vapigen.pc
+	usr/share/aclocal/vala.m4
+	usr/share/aclocal/vapigen.m4
+	usr/share/doc/
+	usr/share/man/man1/valac.1*
+	usr/share/man/man1/vala-gen-introspect.1*
+	usr/share/man/man1/vapigen.1*
+	usr/share/vala/
+"
 
 DIFF_EXCLUDES="vala*.c"
 
