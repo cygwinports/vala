@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="vala"
-VERSION=0.36.4
+VERSION=0.38.7
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Compiler for the GObject type system"
@@ -15,30 +15,38 @@ PATCH_URI="
 	0.7.7-testrunner.patch
 	0.9.8-no-dirty-version.patch
 	0.10.1-exeext.patch
+	0.38-doclet-load.patch
+	0.38-doclet-version.patch
+	0.38-no-undefined.patch
 "
 
 DEPEND="pkgconfig(glib-2.0)"
 
-PKG_NAMES="vala libvala0.36_0 libvala0.36-devel"
-libvala0_36_0_CONTENTS="
-	usr/bin/*-0.36*
-	usr/lib/pkgconfig/vapigen-0.36.pc
-	usr/lib/vala-0.36/
-	usr/share/man/man1/*-0.36.*
-	usr/share/vala-0.36/
+PKG_NAMES="vala libvala0.38_0 libvala0.38-devel"
+libvala0_38_0_CONTENTS="
+	usr/bin/*-0?38*
+	usr/lib/pkgconfig/vapigen-0.38.pc
+	usr/lib/vala-0.38/gen-introspect-0.38.exe
+	usr/lib/valadoc-0.38/
+	usr/share/man/man1/*-0.38.*
+	usr/share/vala-0.38/
 "
-libvala0_36_devel_OBSOLETES="libvala0.30-devel libvala0.34-devel"
-libvala0_36_devel_CONTENTS="
-	usr/include/vala-0.36/
-	usr/lib/libvala-0.36.dll.a
-	usr/lib/pkgconfig/libvala-0.36.pc
-	usr/share/devhelp/books/vala-0.36/
+libvala0_38_devel_OBSOLETES="libvala0.30-devel libvala0.34-devel libvala0.36-devel"
+libvala0_38_devel_CONTENTS="
+	usr/include/vala-0.38/
+	usr/include/valadoc-0.38/
+	usr/lib/libvala-0.38.dll.a
+	usr/lib/libvaladoc-0.38.dll.a
+	usr/lib/pkgconfig/libvala-0.38.pc
+	usr/lib/pkgconfig/valadoc-0.38.pc
+	usr/share/devhelp/books/vala-0.38/
 "
-vala_REQUIRES="libvala0.36_0"
+vala_REQUIRES="libvala0.38_0"
 vala_CONTENTS="
 	usr/bin/vala
 	usr/bin/vala-gen-introspect
 	usr/bin/valac
+	usr/bin/valadoc
 	usr/bin/vapicheck
 	usr/bin/vapigen
 	usr/lib/pkgconfig/vapigen.pc
@@ -46,10 +54,13 @@ vala_CONTENTS="
 	usr/share/aclocal/vapigen.m4
 	usr/share/doc/
 	usr/share/man/man1/valac.1*
+	usr/share/man/man1/valadoc.1*
 	usr/share/man/man1/vala-gen-introspect.1*
 	usr/share/man/man1/vapigen.1*
 	usr/share/vala/
+	usr/share/valadoc/
 "
+PKG_IGNORE="usr/lib/vala-*/libvalaccodegen.*"
 
 DIFF_EXCLUDES="vala*.c"
 
